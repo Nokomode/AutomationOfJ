@@ -60,6 +60,8 @@ public class AuthService {
             return false;
         }
 
+        // Testing commit
+
         // Check password length
         if (password.length() < 8) {
             return false;

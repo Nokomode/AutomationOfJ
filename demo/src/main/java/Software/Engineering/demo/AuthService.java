@@ -28,6 +28,7 @@ public class AuthService {
         User user = userOpt.get();
 
         if (encoder.matches(password, user.getPasswordHash())) {
+            // Write code to create new shift with current time as start
             return user;
         } else {
             return null;

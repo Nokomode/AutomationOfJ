@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LoginPage.RegisterPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Register"
+	Shell.BackButtonBehavior ="Hidden" >
+
+	<ScrollView>
+		<VerticalStackLayout Padding="20" Spacing="15">
+			<Label Text="Create account" FontAttributes="Bold" FontSize="24" />
+			<Entry x:Name="UsernameEntry" Placeholder="Username" Keyboard="Username" />
+			<Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+			<Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm password" IsPassword="True" />
+			<Picker x:Name="RolePicker" Placeholder="Select role">
+				<Picker.Items>
+					<x:String>Manager</x:String>
+					<x:String>Wait Staff</x:String>
+					<x:String>Busboy</x:String>
+					<x:String>Chef</x:String>
+				</Picker.Items>
+			</Picker>
+			<Button Text="Register" Clicked="OnRegisterClicked" />
+			
+		</VerticalStackLayout>
+	</ScrollView>
+
+</ContentPage>

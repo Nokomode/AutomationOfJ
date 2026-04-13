@@ -74,11 +74,23 @@ namespace LoginPage
                 "application/json"
             );
 
-            HttpResponseMessage response =
-                await client.PostAsync(
-                    "http://localhost:8080/api/auth/register",
-                    content
-                );
+
+            // System.Net.Http.HttpRequestException: 'No connection could be made because the target machine actively refused it. (localhost:8080)'
+            HttpResponseMessage response;
+            try
+            {
+                response =
+                    await client.PostAsync(
+                        "http://localhost:8080/api/auth/register",
+                        content
+                    );
+            }
+            catch (HttpRequestException ex)
+            {
+                Debug.WriteLine($"Request error: {ex.Message}");
+                return false;
+            }
+            
 
             Debug.WriteLine(await response.Content.ReadAsStringAsync());
             if (response.IsSuccessStatusCode)

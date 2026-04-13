@@ -8,11 +8,74 @@
 
 	<ScrollView>
 		<VerticalStackLayout Padding="20" Spacing="15">
-			<Label Text="Create account" FontAttributes="Bold" FontSize="24" />
-			<Entry x:Name="UsernameEntry" Placeholder="Username" Keyboard="Username" />
-			<Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
-			<Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm password" IsPassword="True" />
-			<Picker x:Name="RolePicker" Placeholder="Select role">
+			<Label Text="Create account" FontAttributes="Bold" FontSize="24" Margin="0,0,0,16"/>
+
+            <!-- entry for the user's first name -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="First Name" VerticalOptions="Center" />
+                <Label x:Name="FirstNameAsterisk" Text="*" TextColor="Red" VerticalOptions="Center" IsVisible="False" />
+            </StackLayout>
+            <Entry x:Name="FirstNameEntry" Placeholder="First Name" Margin="0,0,0,10" />
+
+
+            <!-- entry for the user's last name -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Last Name" VerticalOptions="Center" />
+                <Label x:Name="LastNameAsterisk" Text="*" TextColor="Red" VerticalOptions="Center" IsVisible="False" />
+            </StackLayout>
+            <Entry x:Name="LastNameEntry" Placeholder="Last Name" Margin="0,0,0,10" />
+
+            <!-- Email -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Email" VerticalOptions="Center"/>
+                <Label x:Name="EmailAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
+            </StackLayout>
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" Margin="0,0,0,10"/>
+
+            <!-- Phone Number -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Phone Number" VerticalOptions="Center"/>
+                <Label x:Name="PhoneAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
+            </StackLayout>
+            <Entry x:Name="PhoneEntry" Placeholder="Phone Number" Keyboard="Telephone" Margin="0,0,0,10"/>
+
+
+            <!-- Employee ID -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Employee ID" VerticalOptions="Center"/>
+                <Label x:Name="UsernameAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
+            </StackLayout>
+            <Entry x:Name="UsernameEntry" Placeholder="Employee ID" Margin="0,0,0,10"/>
+
+            <!-- Password -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Password" VerticalOptions="Center"/>
+                <Label x:Name="PasswordAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
+            </StackLayout>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" Margin="0,0,0,2"/>
+            <Label Text="8 characters, 1 number, 1 special character required" FontSize="11" TextColor="Gray" Margin="0,0,0,2"/>
+            <Label x:Name="PasswordErrorLabel" Text="Please put 8 characters, 1 number, and 1 special character"
+                   TextColor="Red" FontSize="12" IsVisible="False" Margin="0,0,0,8"/>
+
+            <!-- Confirm Password -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Confirm Password" VerticalOptions="Center"/>
+                <Label x:Name="ConfirmPasswordAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
+            </StackLayout>
+            <Label x:Name="PasswordMismatchLabel" Text="Passwords do not match"
+                   TextColor="Red" FontSize="12" IsVisible="False" Margin="0,2,0,0"/>
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" Margin="0,0,0,10"/>
+
+
+            <!-- <Entry x:Name="UsernameEntry" Placeholder="Username" Keyboard="Username" /> -->
+			<!--<Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />-->
+			<!--<Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm password" IsPassword="True" />-->
+            <!-- Role -->
+            <StackLayout Orientation="Horizontal" Spacing="4">
+                <Label Text="Role" VerticalOptions="Center"/>
+                <Label x:Name="RoleAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
+            </StackLayout>
+            <Picker x:Name="RolePicker" Title="Select Role" Margin="0,0,0,10">
 				<Picker.Items>
 					<x:String>Manager</x:String>
 					<x:String>Wait Staff</x:String>
@@ -20,7 +83,12 @@
 					<x:String>Chef</x:String>
 				</Picker.Items>
 			</Picker>
-			<Button Text="Register" Clicked="OnRegisterClicked" />
+
+            <!-- Global empty-field error -->
+            <Label x:Name="AllFieldsErrorLabel" Text="Please fill out all fields"
+                   TextColor="Red" FontSize="13" IsVisible="False" HorizontalOptions="Center" Margin="0,4,0,4"/>
+
+            <Button Text="Register" Clicked="OnRegisterClicked" Margin="0,8,0,24"/>
 			
 		</VerticalStackLayout>
 	</ScrollView>

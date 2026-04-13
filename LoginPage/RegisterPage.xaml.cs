@@ -20,31 +20,80 @@ namespace LoginPage
 
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            Debug.WriteLine("Register button clicked");
-            var username = UsernameEntry?.Text;
-            var password = PasswordEntry?.Text;
-            var confirm = ConfirmPasswordEntry?.Text;
-            var role = RolePicker?.SelectedItem?.ToString();
-            if (string.IsNullOrWhiteSpace(username) ||
-                string.IsNullOrWhiteSpace(password) ||
-                string.IsNullOrWhiteSpace(role) ||
-                password != confirm)
+
+            // Reset all error states
+            FirstNameAsterisk.IsVisible = false;
+            LastNameAsterisk.IsVisible = false;
+            EmailAsterisk.IsVisible = false;
+            PhoneAsterisk.IsVisible = false;
+            UsernameAsterisk.IsVisible = false;
+            PasswordAsterisk.IsVisible = false;
+            ConfirmPasswordAsterisk.IsVisible = false;
+            RoleAsterisk.IsVisible = false;
+            AllFieldsErrorLabel.IsVisible = false;
+            PasswordErrorLabel.IsVisible = false;
+            PasswordMismatchLabel.IsVisible = false;
+
+
+
+
+
+            bool hasEmpty = false;
+
+            // Check empty fields and show asterisks
+            if (string.IsNullOrWhiteSpace(FirstNameEntry.Text)) { FirstNameAsterisk.IsVisible = true; hasEmpty = true; }
+            if (string.IsNullOrWhiteSpace(LastNameEntry.Text)) { LastNameAsterisk.IsVisible = true; hasEmpty = true; }
+            if (string.IsNullOrWhiteSpace(EmailEntry.Text)) { EmailAsterisk.IsVisible = true; hasEmpty = true; }
+            if (string.IsNullOrWhiteSpace(PhoneEntry.Text)) { PhoneAsterisk.IsVisible = true; hasEmpty = true; }
+            if (string.IsNullOrWhiteSpace(UsernameEntry.Text)) { UsernameAsterisk.IsVisible = true; hasEmpty = true; }
+            if (string.IsNullOrWhiteSpace(PasswordEntry.Text)) { PasswordAsterisk.IsVisible = true; hasEmpty = true; }
+            if (string.IsNullOrWhiteSpace(ConfirmPasswordEntry.Text)) { ConfirmPasswordAsterisk.IsVisible = true; hasEmpty = true; }
+            if (RolePicker.SelectedIndex == -1) { RoleAsterisk.IsVisible = true; hasEmpty = true; }
+
+            if (hasEmpty)
             {
-                await DisplayAlertAsync("Error", "Registration failed. Username may already exist.", "OK");
+                await DisplayAlertAsync("Error", "Please Fill Out All Fields", "OK");
+                AllFieldsErrorLabel.IsVisible = true;
+                return;
+            }
+
+            // Password complexity: 8+ chars, 1 number, 1 special character
+            var password = PasswordEntry.Text;
+            bool validPassword = password.Length >= 8
+                && password.Any(char.IsDigit)
+                && password.Any(c => !char.IsLetterOrDigit(c));
+
+            if (!validPassword)
+            {
+                await DisplayAlertAsync("Error", "Password must be at least 8 characters long and contain at least one number and one special character.", "OK");
+                PasswordErrorLabel.IsVisible = true;
+                return;
+            }
+
+            // Password match
+            if (password != ConfirmPasswordEntry.Text)
+            {
+                await DisplayAlertAsync("Error", "Passwords do not match.", "OK");
+                PasswordMismatchLabel.IsVisible = true;
                 return;
             }
 
 
+
+
             User newUser = new User
             {
-                Username = username,
-                Password = password,
-                Role = role
+                Username = UsernameEntry.Text,
+                Password = PasswordEntry.Text,
+                Role = RolePicker.SelectedItem.ToString(),
+                Email = EmailEntry.Text,
+                Phone = PhoneEntry.Text,
+                FirstName = FirstNameEntry.Text,
+                LastName = LastNameEntry.Text,
+                Salary = 0 // Default salary, can be updated later by admin
             };
 
-            HttpClient client = new HttpClient();
-            AuthService authService = new AuthService(client);
-            bool success = await authService.RegisterAsync(newUser);
+            bool success = await _authService.RegisterAsync(newUser);
 
             if (success)
             {
@@ -53,7 +102,7 @@ namespace LoginPage
             else
 
             {
-                Debug.WriteLine("Registration failed.");
+                await DisplayAlertAsync("Error", "HTTP Connection Timed Out", "OK");
             }
 
             

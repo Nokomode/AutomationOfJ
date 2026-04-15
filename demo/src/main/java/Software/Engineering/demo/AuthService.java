@@ -32,7 +32,7 @@ public class AuthService {
             //When the employee Logs in they will automatically  be clocked in and start their shift. Here is where that will be implemented. We will also need to add a clock out function when the employee logs out.
             LocalDateTime startTime = LocalDateTime.now();
             ShiftStart.setStartTime(startTime);
-            Shift newShift = new Shift(startTime, LocalDateTime.now(), user.getEmployeeID(), LocalDate.now());
+            Shift newShift = new Shift(startTime, LocalDateTime.now(), user, LocalDate.now());
             shiftRepository.save(newShift);
 
 
@@ -45,7 +45,7 @@ public class AuthService {
 
     //This will find the user that's logging out/clocking out current shift
     public void logout(String username) {
-        List<Shift> activeShiftOpt = shiftRepository.findByEmployeeId(username);
+        List<Shift> activeShiftOpt = shiftRepository.findByEmployeeEmployeeID(username);
 
         //Loop through the list and find the shift with the same start time
         LocalDateTime start = ShiftStart.startTime;

@@ -68,6 +68,9 @@
 	  <Compile Update="ManagerDashboardPage.xaml.cs">
 	    <DependentUpon>ManagerDashboardPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="TableLayoutPage.xaml.cs">
+	    <DependentUpon>TableLayoutPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="TopBarView.xaml.cs">
 	    <DependentUpon>TopBarView.xaml</DependentUpon>
 	  </Compile>
@@ -78,6 +81,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ManagerDashboardPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TableLayoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TopBarView.xaml">

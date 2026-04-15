@@ -7,29 +7,95 @@ public partial class TopBarView : ContentView
 		InitializeComponent();
 	}
 
-	private async void OnDashboardClicked(Object sender, EventArgs e)
-	{
+    public void SetDashboardUnderline()
+    {
+        DashboardUnderline.IsVisible = true;
+        TableLayoutUnderline.IsVisible = false;
+        InventoryUnderline.IsVisible = false;
+        SalesUnderline.IsVisible = false;
+        EmployeeProfilesUnderline.IsVisible = false;
+        RefundsUnderline.IsVisible = false;
+    }
 
+    public void SetTableLayoutUnderline() 
+    {
+        DashboardUnderline.IsVisible = false;
+        TableLayoutUnderline.IsVisible = true;
+        InventoryUnderline.IsVisible = false;
+        SalesUnderline.IsVisible = false;
+        EmployeeProfilesUnderline.IsVisible = false;
+        RefundsUnderline.IsVisible = false;
+    }
+
+    public void SetInventoryUnderline()
+    {
+        DashboardUnderline.IsVisible = false;
+        TableLayoutUnderline.IsVisible = false;
+        InventoryUnderline.IsVisible = true;
+        SalesUnderline.IsVisible = false;
+        EmployeeProfilesUnderline.IsVisible = false;
+        RefundsUnderline.IsVisible = false;
+    }
+
+    public void SetSalesUnderline()
+    {
+        DashboardUnderline.IsVisible = false;
+        TableLayoutUnderline.IsVisible = false;
+        InventoryUnderline.IsVisible = false;
+        SalesUnderline.IsVisible = true;
+        EmployeeProfilesUnderline.IsVisible = false;
+        RefundsUnderline.IsVisible = false;
+    }
+
+    public void SetEmployeeProfilesUnderline()
+    {
+        DashboardUnderline.IsVisible = false;
+        TableLayoutUnderline.IsVisible = false;
+        InventoryUnderline.IsVisible = false;
+        SalesUnderline.IsVisible = false;
+        EmployeeProfilesUnderline.IsVisible = true;
+        RefundsUnderline.IsVisible = false;
+    }
+
+    public void SetRefundsUnderline()
+    {
+        DashboardUnderline.IsVisible = false;
+        TableLayoutUnderline.IsVisible = false;
+        InventoryUnderline.IsVisible = false;
+        SalesUnderline.IsVisible = false;
+        EmployeeProfilesUnderline.IsVisible = false;
+        RefundsUnderline.IsVisible = true;
+    }
+
+    private async void OnDashboardClicked(Object sender, EventArgs e)
+	{
+        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
 	}
+
+    private async void OnTableLayoutClicked(Object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"//{nameof(TableLayoutPage)}");
+    }
 
 	private async void OnInventoryClicked(Object sender, EventArgs e)
 	{
 
-	}
+        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
+    }
 
     private async void OnSalesClicked(Object sender, EventArgs e)
     {
-
+        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
     }
 
     private async void OnEmployeeProfilesClicked(Object sender, EventArgs e)
     {
-
+        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
     }
 
     private async void OnRefundsClicked(Object sender, EventArgs e)
     {
-
+        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
     }
 
     private async void OnLogoutClicked(Object sender, EventArgs e)

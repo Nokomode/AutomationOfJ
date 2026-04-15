@@ -3,6 +3,9 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.time.LocalDate;
 
+
+@Entity
+@Table(name = "shift")
 public class Shift {
 
     @Id
@@ -12,7 +15,7 @@ public class Shift {
 
     @ManyToOne
     @JoinColumn(name = "Employee_ID", nullable = false)
-    private String employeeID;
+    private User employee;
 
     @Column (name = "Date")
     private LocalDate date;
@@ -28,18 +31,18 @@ public class Shift {
 
     }
 
-    public Shift(LocalDateTime startTime, LocalDateTime endTime, int shiftId, String employeeId, LocalDate date) {
+    public Shift(LocalDateTime startTime, LocalDateTime endTime, int shiftId, User employee, LocalDate date) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.shiftID = shiftId;
-        this.employeeID = employeeId;
+        this.employee = employee;
         this.date = date;
     }
 
-    public Shift(LocalDateTime startTime, LocalDateTime endTime, String employeeId, LocalDate date) {
+    public Shift(LocalDateTime startTime, LocalDateTime endTime, User employee, LocalDate date) {
         this.startTime = startTime;
         this.endTime = endTime;
-        this.employeeID = employeeId;
+        this.employee = employee;
         this.date = date;
     }
 
@@ -55,11 +58,11 @@ public class Shift {
     }
     public void setShiftID(int shiftId) { this.shiftID = shiftId; }
 
-    public String getEmployeeID() {
-        return employeeID;
+    public User getEmployee() {
+        return employee;
     }
-    public void setEmployeeID(String employeeID) {
-        this.employeeID = employeeID;
+    public void setEmployeeID(User employee) {
+        this.employee = employee;
     }
 
     public LocalDate getDate() { return this.date; }

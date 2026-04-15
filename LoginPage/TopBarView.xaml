@@ -11,7 +11,7 @@
         <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
             <Button x:Name="DashboardButton" Text="Manager Dashboard"
                    TextColor="White" FontSize="15" FontAttributes="Bold"
-                   VerticalOptions="Center" Margin="0,0,0,0" Background="Transparent"/>
+                   VerticalOptions="Center" Margin="0,0,0,0" Background="Transparent" Clicked="OnDashboardClicked"/>
             <BoxView x:Name="DashboardUnderline" Color="#9880E5"
                      HeightRequest="2" IsVisible="True"/>
         </VerticalStackLayout>
@@ -19,8 +19,12 @@
         <!-- Center: Navigation buttons -->
         <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" Spacing="70">
 
-            
 
+            <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
+                <Button Text="Table Layout" Clicked="OnTableLayoutClicked" Background="Transparent" TextColor="White"/>
+                <BoxView x:Name="TableLayoutUnderline" Color="#9880E5"
+                HeightRequest="2" IsVisible="False"/>
+            </VerticalStackLayout>
 
             <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
                 <Button Text="Inventory" Clicked="OnInventoryClicked" Background="Transparent" TextColor="White"/>

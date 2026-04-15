@@ -32,4 +32,9 @@
         ContentTemplate="{DataTemplate local:TopBarView}"
         Route="TopBarView" />
 
+    <ShellContent
+        Title="Table Layout"
+        ContentTemplate="{DataTemplate local:TableLayoutPage}"
+        Route="TableLayoutPage" />
+
 </Shell>

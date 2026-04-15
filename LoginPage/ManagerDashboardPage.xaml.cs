@@ -7,5 +7,6 @@ public partial class ManagerDashboardPage : ContentPage
 	{
 		InitializeComponent();
 		_authService = authService;
-	}
+		TopBar.SetDashboardUnderline();
+    }
 }

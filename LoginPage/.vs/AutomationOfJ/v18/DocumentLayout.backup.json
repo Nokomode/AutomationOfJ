@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\topbarview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:topbarview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\topbarview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:topbarview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\topbarview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:topbarview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\managerdashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:managerdashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\managerdashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:managerdashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -38,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -51,8 +55,7 @@
               "ViewState": "AgIAAAUAAAAAAAAAAADwvxsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-15T18:20:56.67Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -76,46 +79,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml.cs",
-              "RelativeToolTip": "RegisterPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:32:27.68Z",
+              "WhenOpened": "2026-04-15T20:14:15.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TopBarView.xaml",
               "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TopBarView.xaml",
               "RelativeDocumentMoniker": "TopBarView.xaml",
               "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TopBarView.xaml",
               "RelativeToolTip": "TopBarView.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-15T18:29:05.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TopBarView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TopBarView.xaml.cs",
               "RelativeDocumentMoniker": "TopBarView.xaml.cs",
               "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TopBarView.xaml.cs",
               "RelativeToolTip": "TopBarView.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADwvxYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T18:29:30.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ManagerDashboardPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\ManagerDashboardPage.xaml.cs",
               "RelativeDocumentMoniker": "ManagerDashboardPage.xaml.cs",
@@ -134,14 +137,26 @@
               "RelativeDocumentMoniker": "ManagerDashboardPage.xaml",
               "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\ManagerDashboardPage.xaml",
               "RelativeToolTip": "ManagerDashboardPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-15T18:22:14.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml.cs",
+              "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml.cs",
+              "RelativeToolTip": "RegisterPage.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:32:27.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "RegisterPage.xaml",
               "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "RegisterPage.xaml",
@@ -149,8 +164,7 @@
               "RelativeToolTip": "RegisterPage.xaml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T18:22:21.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T18:22:21.9Z"
             }
           ]
         }

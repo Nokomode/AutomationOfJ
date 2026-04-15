@@ -36,5 +36,25 @@
         Title="Table Layout"
         ContentTemplate="{DataTemplate local:TableLayoutPage}"
         Route="TableLayoutPage" />
+    
+    <ShellContent
+        Title="Inventory"
+        ContentTemplate="{DataTemplate local:InventoryPage}"
+        Route="InventoryPage" />
+    
+     <ShellContent
+        Title="Sales"
+        ContentTemplate="{DataTemplate local:SalesPage}"
+        Route="SalesPage" />
+    
+     <ShellContent
+        Title="Employee Profiles"
+        ContentTemplate="{DataTemplate local:EmployeeProfilesPage}"
+        Route="EmployeeProfilesPage" />
+    
+    <ShellContent
+        Title="Refunds"
+        ContentTemplate="{DataTemplate local:RefundsPage}"
+        Route="RefundsPage" />
 
 </Shell>

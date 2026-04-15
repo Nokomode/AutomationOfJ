@@ -80,22 +80,22 @@ public partial class TopBarView : ContentView
 	private async void OnInventoryClicked(Object sender, EventArgs e)
 	{
 
-        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
+        await Shell.Current.GoToAsync($"//{nameof(InventoryPage)}");
     }
 
     private async void OnSalesClicked(Object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
+        await Shell.Current.GoToAsync($"//{nameof(SalesPage)}");
     }
 
     private async void OnEmployeeProfilesClicked(Object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
+        await Shell.Current.GoToAsync($"//{nameof(EmployeeProfilesPage)}");
     }
 
     private async void OnRefundsClicked(Object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
+        await Shell.Current.GoToAsync($"//{nameof(RefundsPage)}");
     }
 
     private async void OnLogoutClicked(Object sender, EventArgs e)

@@ -9,7 +9,7 @@ namespace LoginPage
 
     public class LoginRequest
     {
-        public string Username { get; set; }
+        public string EmployeeID { get; set; }
         public string Password { get; set; }
     }
 

@@ -83,14 +83,14 @@ namespace LoginPage
 
             User newUser = new User
             {
-                Username = UsernameEntry.Text,
+                EmployeeID = UsernameEntry.Text,
                 Password = PasswordEntry.Text,
                 Role = RolePicker.SelectedItem.ToString(),
                 Email = EmailEntry.Text,
                 Phone = PhoneEntry.Text,
                 FirstName = FirstNameEntry.Text,
                 LastName = LastNameEntry.Text,
-                Salary = 0 // Default salary, can be updated later by admin
+                Salary = 11 // Default salary, can be updated later by admin
             };
 
             bool success = await _authService.RegisterAsync(newUser);

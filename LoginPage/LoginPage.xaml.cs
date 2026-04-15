@@ -18,19 +18,38 @@ namespace LoginPage
 
         private async void OnLoginClicked(object? sender, EventArgs e)
         {
-            HttpClient client = new HttpClient();
-            AuthService service = new AuthService(client);
-            LoginResponse result = await service.LoginAsync(UsernameField.Text, PasswordField.Text);
+            LoginErrorLabel.IsVisible = false;
+            
+            LoginResponse result = await _authService.LoginAsync(UsernameField.Text, PasswordField.Text);
 
             if (result != null)
             {
                 UserSession.Role = result.Role;
-                UserSession.Username = result.Username;
+                UserSession.EmployeeID = result.EmployeeID;
                 // navigate to the right page
+
+                switch (UserSession.Role)
+                {
+                    case "Manager":
+                        await Shell.Current.GoToAsync("//ManagerDashboard");
+                        break;
+                    case "Wait Staff":
+                        await Shell.Current.GoToAsync("//WaiterDashboard");
+                        break;
+                    case "Chef":
+                        await Shell.Current.GoToAsync("//ChefDashboard");
+                        break;
+                    case "Busboy":
+                        await Shell.Current.GoToAsync("//BusboyDashboard");
+                        break;
+                }
             }
             else
             {
-                // show error
+                LoginErrorLabel.IsVisible = true;
+                //await DisplayAlertAsync("Error", "Incorrect Login Information", "OK");
+                return;
+                
             }
         }
 

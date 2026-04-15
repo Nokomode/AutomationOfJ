@@ -2,12 +2,12 @@
 
 public static class UserSession
 {
-    public static string Username { get; set; }
+    public static string EmployeeID { get; set; }
     public static string Role { get; set; }
 
     public static void Clear()
     {
-        Username = null;
+        EmployeeID = null;
         Role = null;
     }
 }

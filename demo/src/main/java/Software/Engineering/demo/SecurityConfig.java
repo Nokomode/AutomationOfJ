@@ -26,10 +26,10 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService users(UserRepository userRepo) {
         return username -> {
-            Software.Engineering.demo.User user = userRepo.findByUsername(username)
+            Software.Engineering.demo.User user = userRepo.findById(username)
                     .orElseThrow(() -> new UsernameNotFoundException("User not found"));
             return org.springframework.security.core.userdetails.User
-                    .withUsername(user.getUsername())
+                    .withUsername(user.getEmployeeID())
                     .password(user.getPasswordHash()) // your hashed password column
                     .authorities(user.getRole())           // or authorities if you have more complex roles
                     .build();

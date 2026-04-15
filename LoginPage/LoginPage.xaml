@@ -10,21 +10,35 @@
             WidthRequest="560"
             VerticalOptions="Center">
             
-
+            <!-- Username -->
             <Label x:Name="UsernameLabel" Text="Username"/>
             <Entry x:Name="UsernameField"
                    WidthRequest="500"
                    HorizontalOptions="Center"/>
+            <!-- Password -->
             <Label x:Name="PasswordLabel" Text="Password"/>
             <Entry x:Name="PasswordField" IsPassword="True" 
                    WidthRequest="500"
                     HorizontalOptions="Center"/>
+
+            <!-- Login error message -->
+            <Label x:Name="LoginErrorLabel"
+               Text="Incorrect login information, please try again."
+               TextColor="Red"
+               FontSize="13"
+               HorizontalOptions="Center"
+               IsVisible="False"
+               Margin="0,4,0,4"/>
+            
+            <!-- Login button -->
             <Button
                 x:Name="SubmitButton"
                 Text="Log in"
                 Clicked="OnLoginClicked"
                 HorizontalOptions="Fill"
                 WidthRequest="300"/>
+
+            <!-- Register button -->
             <Button
                 x:Name="RegisterButton"
                 Text="Register"

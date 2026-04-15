@@ -21,7 +21,7 @@ public class AuthController {
 
         if (success != null) {
             LoginResponse response = new LoginResponse();
-            response.setUsername(success.getUsername());
+            response.setUsername(success.getEmployeeID());
             response.setRole(success.getRole());
             response.setFirstName(success.getFirstName());
             response.setLastName(success.getLastName());
@@ -34,8 +34,8 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
 
-        boolean success = authService.register(request.getUsername(), request.getPassword(), request.getRole(), request.getFirstName(), request.getLastName(), request.getSalary(), request.getPhone(), request.getEmail());
-        System.out.println("Received registration: " + request.getUsername());
+        boolean success = authService.register(request.getEmployeeID(), request.getPassword(), request.getRole(), request.getFirstName(), request.getLastName(), request.getSalary(), request.getPhone(), request.getEmail());
+        System.out.println("Received registration: " + request.getEmployeeID());
 
         if (success) {
             return ResponseEntity.ok().build();

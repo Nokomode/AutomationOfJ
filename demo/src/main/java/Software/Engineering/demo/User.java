@@ -10,7 +10,7 @@ import java.util.Optional;
 
 
 @Entity
-@Table(name = "users")
+@Table(name = "employee")
 public class User {
 
     public User() {
@@ -18,7 +18,7 @@ public class User {
     }
 
     public User(String username, String password, String role, String firstName, String lastName, double salary, String phone, String email ) {
-        this.username = username;
+        this.employeeID = username;
         this.passwordHash = password;
         this.role = role;
         this.firstName = firstName;
@@ -29,16 +29,13 @@ public class User {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(name = "Employee_ID")
+    private String employeeID;
 
-    @Column(name = "username")
-    private String username;
-
-    @Column(name = "password_hash")
+    @Column(name = "Password")
     private String passwordHash;
 
-    @Column(name = "role")
+    @Column(name = "Role")
     private String role;
 
     @Column(name = "First_Name")
@@ -53,13 +50,12 @@ public class User {
     @Column(name = "Email")
     private String email;
 
-    @Column(name = "Phone")
+    @Column(name = "Phone#")
     private String phone;
 
 
 
-    public Integer getId() {return id;}
-    public String getUsername() {return username;}
+    public String getEmployeeID() {return employeeID;}
     public String getRole() {return role;}
     public String getPasswordHash() {return passwordHash;}
     public String getFirstName() {return firstName;}

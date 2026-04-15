@@ -1,10 +1,5 @@
 package Software.Engineering.demo;
-import jakarta.persistence.*;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.List;
@@ -20,7 +15,7 @@ public class AuthService {
     }
 
     public User login(String username, String password) {
-        Optional<User> userOpt = userRepository.findByUsername(username);
+        Optional<User> userOpt = userRepository.findById(username);
         if (userOpt.isEmpty()) {
             return null;
         }
@@ -74,7 +69,7 @@ public class AuthService {
             return false;
         }
 
-        if (userRepository.existsByUsername(username)) {
+        if (userRepository.existsById(username)) {
             return false;
         }
 

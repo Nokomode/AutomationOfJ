@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginPage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+49d1acd395d190ddbd08f2b080d1e6e194aa17fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+69cf6eb06b2f51fb9b81528325176d8fddcf8658")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginPage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginPage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

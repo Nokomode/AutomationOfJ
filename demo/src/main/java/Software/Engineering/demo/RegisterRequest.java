@@ -1,7 +1,7 @@
 package Software.Engineering.demo;
 
 public class RegisterRequest {
-    private String username;
+    private String employeeID;
     private String password;
     private String role;
     private String firstName;
@@ -13,8 +13,8 @@ public class RegisterRequest {
     public RegisterRequest() {}
 
 
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
+    public String getEmployeeID() { return employeeID; }
+    public void setEmployeeID(String username) { this.employeeID = username; }
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }

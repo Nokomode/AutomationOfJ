@@ -2,16 +2,21 @@ package Software.Engineering.demo;
 import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+
+import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class AuthService {
     private final UserRepository userRepository;
+    private final ShiftRepository shiftRepository;
     private final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public AuthService(UserRepository userRepository) {
+    public AuthService(UserRepository userRepository, ShiftRepository shiftRepository) {
         this.userRepository = userRepository;
+        this.shiftRepository = shiftRepository;
     }
 
     public User login(String username, String password) {
@@ -23,11 +28,33 @@ public class AuthService {
         User user = userOpt.get();
 
         if (encoder.matches(password, user.getPasswordHash())) {
-            // Write code to create new shift with current time as start
+
+            //When the employee Logs in they will automatically  be clocked in and start their shift. Here is where that will be implemented. We will also need to add a clock out function when the employee logs out.
+            LocalDateTime startTime = LocalDateTime.now();
+            ShiftStart.setStartTime(startTime);
+            Shift newShift = new Shift(startTime, LocalDateTime.now(), user.getEmployeeID(), LocalDate.now());
+            shiftRepository.save(newShift);
+
+
             return user;
         } else {
             return null;
         }
+    }
+
+
+    //This will find the user that's logging out/clocking out current shift
+    public void logout(String username) {
+        List<Shift> activeShiftOpt = shiftRepository.findByEmployeeId(username);
+
+        //Loop through the list and find the shift with the same start time
+        LocalDateTime start = ShiftStart.startTime;
+        for (Shift shift : activeShiftOpt) {
+            if (shift.getStartTime() == start ) {
+                shiftRepository.save(new Shift(LocalDateTime.now(), shift.getShiftId()));
+            }
+        }
+
     }
 
     public boolean register(String username, String password, String role, String firstName, String lastName, double salary, String phone, String email) {

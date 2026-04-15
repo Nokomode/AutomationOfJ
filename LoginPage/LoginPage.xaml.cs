@@ -31,16 +31,16 @@ namespace LoginPage
                 switch (UserSession.Role)
                 {
                     case "Manager":
-                        await Shell.Current.GoToAsync("//ManagerDashboard");
+                        await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
                         break;
                     case "Wait Staff":
-                        await Shell.Current.GoToAsync("//WaiterDashboard");
+                        //await Shell.Current.GoToAsync($"//{nameof(WaiterDashboardPage)}");
                         break;
                     case "Chef":
-                        await Shell.Current.GoToAsync("//ChefDashboard");
+                        //await Shell.Current.GoToAsync($"//{nameof(ChefDashboardPage)}");
                         break;
                     case "Busboy":
-                        await Shell.Current.GoToAsync("//BusboyDashboard");
+                        //await Shell.Current.GoToAsync($"//{nameof(BusboyDashboardPage)}");
                         break;
                 }
             }

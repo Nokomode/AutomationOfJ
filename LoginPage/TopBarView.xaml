@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage.TopBarView">
+
+
+    <Grid BackgroundColor="Black" Padding="12,0" HeightRequest="70"
+          ColumnDefinitions="Auto,*,Auto">
+
+        <!-- Left: Dashboard label -->
+        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
+            <Button x:Name="DashboardButton" Text="Manager Dashboard"
+                   TextColor="White" FontSize="15" FontAttributes="Bold"
+                   VerticalOptions="Center" Margin="0,0,0,0" Background="Transparent"/>
+            <BoxView x:Name="DashboardUnderline" Color="#9880E5"
+                     HeightRequest="2" IsVisible="True"/>
+        </VerticalStackLayout>
+
+        <!-- Center: Navigation buttons -->
+        <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" Spacing="32">
+
+            <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
+                <Button Text="Dashboard" Clicked="OnDashboardClicked" Background="Transparent" TextColor="White"/>
+            </VerticalStackLayout>
+
+            <Button Text="Inventory" Clicked="OnInventoryClicked" Background="Transparent" TextColor="White"/>
+            
+            
+            <Button Text="Sales" Clicked="OnSalesClicked" Background="Transparent" TextColor="White"/>
+            
+            
+            <Button Text="Employee Profiles" Clicked="OnEmployeeProfilesClicked"  Background="Transparent" TextColor="White"/>
+            
+            
+            <Button Text="Refunds" Clicked="OnRefundsClicked" Background="Transparent" TextColor="White"/>
+
+            
+            <Label Text="Manager, John" TextColor="White" VerticalOptions="Center"/>
+            <Button Text="Logout" Clicked="OnLogoutClicked" TextColor="White" Background="#9880E5"/>
+        </HorizontalStackLayout>
+    </Grid>
+    
+    
+</ContentView>

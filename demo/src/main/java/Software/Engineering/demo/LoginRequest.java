@@ -11,13 +11,13 @@ import java.util.Optional;
 
 
 public class LoginRequest {
-    private String username;
+    private String employeeID;
     private String password;
 
     public LoginRequest() {}
 
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
+    public String getEmployeeID() { return employeeID; }
+    public void setEmployeeID(String employeeID) { this.employeeID = employeeID; }
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }

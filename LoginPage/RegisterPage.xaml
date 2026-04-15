@@ -7,8 +7,8 @@
 	Shell.BackButtonBehavior ="Hidden" >
 
 	<ScrollView>
-		<VerticalStackLayout Padding="20" Spacing="15">
-			<Label Text="Create account" FontAttributes="Bold" FontSize="24" Margin="0,0,0,16"/>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Create account" FontAttributes="Bold" FontSize="24" Margin="0,0,0,16"/>
 
             <!-- entry for the user's first name -->
             <StackLayout Orientation="Horizontal" Spacing="4">
@@ -68,29 +68,29 @@
 
 
             <!-- <Entry x:Name="UsernameEntry" Placeholder="Username" Keyboard="Username" /> -->
-			<!--<Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />-->
-			<!--<Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm password" IsPassword="True" />-->
+            <!--<Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />-->
+            <!--<Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm password" IsPassword="True" />-->
             <!-- Role -->
             <StackLayout Orientation="Horizontal" Spacing="4">
                 <Label Text="Role" VerticalOptions="Center"/>
                 <Label x:Name="RoleAsterisk" Text="*" TextColor="Red" IsVisible="False" VerticalOptions="Center"/>
             </StackLayout>
             <Picker x:Name="RolePicker" Title="Select Role" Margin="0,0,0,10">
-				<Picker.Items>
-					<x:String>Manager</x:String>
-					<x:String>Wait Staff</x:String>
-					<x:String>Busboy</x:String>
-					<x:String>Chef</x:String>
-				</Picker.Items>
-			</Picker>
+                <Picker.Items>
+                    <x:String>Manager</x:String>
+                    <x:String>Wait Staff</x:String>
+                    <x:String>Busboy</x:String>
+                    <x:String>Chef</x:String>
+                </Picker.Items>
+            </Picker>
 
             <!-- Global empty-field error -->
             <Label x:Name="AllFieldsErrorLabel" Text="Please fill out all fields"
                    TextColor="Red" FontSize="13" IsVisible="False" HorizontalOptions="Center" Margin="0,4,0,4"/>
 
             <Button Text="Register" Clicked="OnRegisterClicked" Margin="0,8,0,24"/>
-			
-		</VerticalStackLayout>
-	</ScrollView>
+
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>

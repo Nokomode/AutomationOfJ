@@ -16,8 +16,8 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
-        User success = authService.login(request.getUsername(), request.getPassword());
-        System.out.println("Received login: " + request.getUsername());
+        User success = authService.login(request.getEmployeeID(), request.getPassword());
+        System.out.println("Received login: " + request.getEmployeeID());
 
         if (success != null) {
             LoginResponse response = new LoginResponse();

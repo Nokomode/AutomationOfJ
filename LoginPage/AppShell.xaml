@@ -17,4 +17,19 @@
         ContentTemplate="{DataTemplate local:RegisterPage}"
         Route="RegisterPage" />
 
+    <ShellContent
+        Title="Manager Dashboard"
+        ContentTemplate="{DataTemplate local:ManagerDashboardPage}"
+        Route="ManagerDashboardPage" />
+
+    <!-- <ShellContent
+        Title="Waiter Dashboard"
+        ContentTemplate="{DataTemplate local:WaiterDashboardPage}"
+        Route="WaiterDashboardPage" /> -->
+
+    <ShellContent
+        Title="Top Bar"
+        ContentTemplate="{DataTemplate local:TopBarView}"
+        Route="TopBarView" />
+
 </Shell>

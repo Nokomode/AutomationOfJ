@@ -28995,9 +28995,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\LoginPage.csproj",
-      "projectName": "LoginPage",
-      "projectPath": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\LoginPage.csproj",
+      "projectUniqueName": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AutomationOfJ.csproj",
+      "projectName": "AutomationOfJ",
+      "projectPath": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AutomationOfJ.csproj",
       "packagesPath": "C:\\Users\\adboo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\obj\\",
       "projectStyle": "PackageReference",

@@ -2,6 +2,7 @@ package Software.Engineering.demo;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.time.LocalDate;
+import java.util.Optional;
 
 @Entity
 @Table(name = "Shift")

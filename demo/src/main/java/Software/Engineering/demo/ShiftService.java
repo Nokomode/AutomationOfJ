@@ -12,7 +12,7 @@ public class ShiftService {
     }
 
     public Shift getShiftByShiftID(int shiftID) {
-        return shiftRepo.findById((long) shiftID).orElse(null);
+        return shiftRepo.findById(shiftID).orElse(null);
     }
 
     public Shift[] getShiftByEmployeeId(String employeeId){
@@ -26,9 +26,9 @@ public class ShiftService {
         shiftRepo.save(shift);
     }
 
-    public Shift[] getAllShifts() {
+    public List<Shift> getAllShifts() {
         List<Shift> allShifts = shiftRepo.findAll();
-        return allShifts.toArray(new Shift[0]);
+        return allShifts;
     }
 
     

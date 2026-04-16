@@ -11,4 +11,3 @@ public interface ShiftRepository extends JpaRepository<Shift, Integer>{
     Optional<Shift> findById(int id);
     List<Shift> findByEmployeeEmployeeID(String id);
 }
-

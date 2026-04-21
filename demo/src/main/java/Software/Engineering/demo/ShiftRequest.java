@@ -1,12 +1,17 @@
 package Software.Engineering.demo;
 
 
+import org.springframework.cglib.core.Local;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class ShiftRequest {
     private int shiftID;
     private String employeeID;
-    private String date;
-    private String startTime;
-    private String endTime;
+    private LocalDate date;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
 
     ///Getters and Setters
     
@@ -26,27 +31,27 @@ public class ShiftRequest {
         this.employeeID = employeeID;
     }
 
-    public String getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
-    public String getStartTime() {
+    public LocalDateTime getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(String startTime) {
+    public void setStartTime(LocalDateTime startTime) {
         this.startTime = startTime;
     }
 
-    public String getEndTime() {
+    public LocalDateTime getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(String endTime) {
+    public void setEndTime(LocalDateTime endTime) {
         this.endTime = endTime;
     }
     

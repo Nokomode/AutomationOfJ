@@ -11,8 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.util.*;
 
 @Repository
-public interface ShiftRepository extends JpaRepository<Shift, Long>{
-    Optional<Shift> findById(Long id);
+public interface ShiftRepository extends JpaRepository<Shift, Integer>{
+    Optional<Shift> findById(int id);
     List<Shift> findByEmployeeIdEmployeeID(String id);
 }
 

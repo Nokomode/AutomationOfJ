@@ -9,7 +9,7 @@
     
     <VerticalStackLayout>
         <views:TopBarView/>
-        
+
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 

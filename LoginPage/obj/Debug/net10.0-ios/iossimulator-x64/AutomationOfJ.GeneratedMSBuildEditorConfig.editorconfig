@@ -20,13 +20,13 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginPage
-build_property.ProjectDir = C:\Users\adboo\Desktop\Software Engineering Project\LoginPage\
+build_property.ProjectDir = C:\Users\PC\Documents\VS Code Projects\AutomationOfJ\LoginPage\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/App.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
@@ -36,7 +36,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/AppShell.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
@@ -46,7 +46,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/LoginPage.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
@@ -56,7 +56,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/ManagerDashboardPage.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/ManagerDashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.ManagerDashboardPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ManagerDashboardPage.xaml
@@ -66,7 +66,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/RegisterPage.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
@@ -76,7 +76,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/Resources/Styles/Colors.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
@@ -86,7 +86,7 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/Resources/Styles/Styles.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
@@ -96,11 +96,51 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
-[C:/Users/adboo/Desktop/Software Engineering Project/LoginPage/TopBarView.xaml]
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/TablePopUpView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.TablePopUpView.xaml
+build_metadata.AdditionalFiles.TargetPath = TablePopUpView.xaml
+build_metadata.AdditionalFiles.RelativePath = TablePopUpView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/TESTINGPAGE.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.TESTINGPAGE.xaml
+build_metadata.AdditionalFiles.TargetPath = TESTINGPAGE.xaml
+build_metadata.AdditionalFiles.RelativePath = TESTINGPAGE.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/TopBarView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.TopBarView.xaml
 build_metadata.AdditionalFiles.TargetPath = TopBarView.xaml
 build_metadata.AdditionalFiles.RelativePath = TopBarView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/WaiterTableLayoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.WaiterTableLayoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = WaiterTableLayoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = WaiterTableLayoutPage.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/WaiterTopBarView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.WaiterTopBarView.xaml
+build_metadata.AdditionalFiles.TargetPath = WaiterTopBarView.xaml
+build_metadata.AdditionalFiles.RelativePath = WaiterTopBarView.xaml
 build_metadata.AdditionalFiles.Inflator = Runtime
 build_metadata.AdditionalFiles.NoWarn = 
 build_metadata.AdditionalFiles.EnableDiagnostics = 

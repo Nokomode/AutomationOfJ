@@ -57,5 +57,6 @@ namespace LoginPage
         {
             await Navigation.PushAsync(new RegisterPage(_authService));
         }
+        
     }
 }

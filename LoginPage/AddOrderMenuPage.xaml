@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage.AddOrderMenuPage"
+             xmlns:views="clr-namespace:LoginPage"
+             Title="AddOrderMenuPage">
+
+             <!--  REMEMBER TO REPLACE ALL DESCRIPTIONS AND IMAGES FOR EACH MENU ITEM -->
+    <Grid RowDefinitions ="70,100,*">
+        <views:WaiterTopBarView Grid.Row ="0"/>
+        <HorizontalStackLayout Grid.Row ="1"
+            Margin ="0,20,0,20" Padding ="20, 0, 20, 0"
+            HeightRequest ="60">
+
+            <Label
+                Margin ="10, 0, 1400, 0"
+                VerticalOptions ="Start"
+                TextColor ="White" Text ="Table_Name"
+                FontSize ="Large"/>
+
+            
+
+            <Button
+                TextColor ="White" Text="Confirm Order"
+                WidthRequest ="245"/>
+        </HorizontalStackLayout>
+
+        <ScrollView Grid.Row ="2" Padding ="20" VerticalScrollBarVisibility ="Default">
+            <Grid RowDefinitions ="100,350,350, 100,350, 100,350,350,350, 100,350,350,350, 100,350,350, 100,350, 100,350,350" ColumnDefinitions ="440,440,440,440" ColumnSpacing ="30"
+                RowSpacing ="40">
+
+                <!--  Appetizers  Rows: 0-2 -->
+
+                <Label
+                    Grid.Row ="0" Grid.Column ="0"
+                    Text ="Appetizers" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="2" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+                
+                <!-- Salads Rows: 3-4  -->
+
+                <Label
+                    Grid.Row ="3" Grid.Column ="0"
+                    Text ="Salads" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <!--  Entrees: Rows 5-8  -->
+
+                <Label
+                    Grid.Row ="5" Grid.Column ="0"
+                    Text ="Entrees" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="6" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="6" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="6" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="6" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+                    
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="7" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="7" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="7" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="7" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+                    
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="8" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <!--  Sides: Rows 9-12  -->
+
+                <Label
+                    Grid.Row ="9" Grid.Column ="0"
+                    Text ="Sides" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="10" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="10" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="10" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="10" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+                    
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+                        
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="11" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+                        
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="11" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="11" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="11" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+                    
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="12" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <!--  Sandwiches: Rows 13-15  -->
+
+                <Label
+                    Grid.Row ="13" Grid.Column ="0"
+                    Text ="Sandwiches" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="14" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="14" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="14" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="14" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="15" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <!--  Burgers: Rows 16-17  -->
+                
+                <Label
+                    Grid.Row ="16" Grid.Column ="0"
+                    Text ="Burgers" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="17" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="17" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="17" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="17" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <!--  Beverages: Rows 18-20  -->
+                <Label
+                    Grid.Row ="18" Grid.Column ="0"
+                    Text ="Beverages" TextColor ="White"
+                    FontSize ="Large"/>
+
+                <Border
+                    Grid.Row ="19" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="19" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="19" Grid.Column ="2"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="19" Grid.Column ="3"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="20" Grid.Column ="0"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+
+                <Border
+                    Grid.Row ="20" Grid.Column ="1"
+                    BackgroundColor ="Gray"
+                    StrokeShape ="RoundRectangle, 10"
+                    HeightRequest ="350" WidthRequest= "440">
+
+                    <AbsoluteLayout>
+                        <Image BackgroundColor ="Orange"
+                            Source ="thechickennachos.png"
+                            ScaleX ="2"
+                            ScaleY ="1"
+                            
+                            WidthRequest ="450" HeightRequest="150"
+                            AbsoluteLayout.LayoutBounds ="0, 0"/>
+
+                        <Label
+                            Text ="Chicken Nachos" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="0,150"/>
+
+                        <Label
+                            Text =" - $8.50" TextColor ="White"
+                            FontSize ="Medium"
+                            AbsoluteLayout.LayoutBounds ="170,150"/>
+
+                        <Label
+                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            MaxLines ="5"
+                            LineBreakMode ="WordWrap"
+                            FontSize ="15"
+                            WidthRequest ="410"
+                            AbsoluteLayout.LayoutBounds ="20,185"/>
+
+                        <Button
+                            Text ="Add To Order"
+                            FontSize ="Medium"
+                            WidthRequest ="450"
+                            AbsoluteLayout.LayoutBounds ="0,300"/>
+                    </AbsoluteLayout>
+                </Border>
+            </Grid>
+        </ScrollView>
+    </Grid> 
+</ContentPage>

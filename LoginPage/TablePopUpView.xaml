@@ -17,6 +17,9 @@
                 Grid.Row ="2" Grid.Column ="0" 
                 FontSize = "Large"
                 Text ="Table_Name" HorizontalOptions ="Center"/>
+            
+            <!-- Action Selection Pop Up Views -->
+
             <!--
             <Button
                 Grid.Row ="1" Grid.Column ="0"
@@ -27,25 +30,44 @@
                 Clicked ="Button_Clicked">
             </Button> -->
 
-            <Border HorizontalOptions ="Center"
+            <Border x:Name ="AddOrderButton"
+                HorizontalOptions ="Center"
                 Grid.Row ="3" Grid.Column ="0"
                 WidthRequest ="400" HeightRequest ="50">
                 <Button 
-                    Text ="Add Order" Clicked ="Button_Clicked"/>
+                    Text ="Add Order" Clicked ="AddOrderButton_Clicked"/>
             </Border>
 
-            <Border 
+            <Border x:Name ="Cancel_ViewButton"
                 Grid.Row ="4" Grid.Column ="0"
                 WidthRequest ="400" HeightRequest ="50">
-                <Button Text ="Cancel/View Orders" Clicked ="Button_Clicked"/>
+                <Button Text ="Cancel/View Orders" Clicked ="Cancel_ViewButton_Clicked"/>
             </Border> 
 
-            <Border x:Name ="b" 
+            <Border x:Name ="CheckoutButton" 
                 Grid.Row ="5" Grid.Column ="0"
                 WidthRequest ="400" HeightRequest ="50">
                 <Button 
-                    x:Name ="MyButton" Text ="Checkout" Clicked ="Button_Clicked"/>
-            </Border>     
+                    Text ="Checkout" Clicked ="CheckoutButton_Clicked"/>
+            </Border>
+
+            <!-- Bill Spliting Pop Up Views -->
+            
+            <Label x:Name ="BillSplitingLabel" 
+                Grid.Row ="3"
+                Text ="How many bills will all orders be split between"
+                MaxLines ="2"
+                IsVisible ="false"/>
+
+            <Picker x:Name ="BillNumberPicker"
+                Grid.Row ="4"
+                Title ="Select Number of Bills"
+                IsVisible ="false"/>
+
+            <Button x:Name ="BillNumberConfirmButton"
+                Grid.Row ="5"
+                Text="Confirm"
+                IsVisible ="false"/>
         </Grid>
     </Border>
 </ContentView>

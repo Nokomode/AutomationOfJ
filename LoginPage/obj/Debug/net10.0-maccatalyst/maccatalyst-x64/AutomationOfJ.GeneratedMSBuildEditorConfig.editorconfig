@@ -26,6 +26,16 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/AddOrderMenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.AddOrderMenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddOrderMenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddOrderMenuPage.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
 [C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.App.xaml
@@ -41,6 +51,26 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/CheckoutPaymentContactInfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.CheckoutPaymentContactInfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CheckoutPaymentContactInfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CheckoutPaymentContactInfoPage.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/PC/Documents/VS Code Projects/AutomationOfJ/LoginPage/CheckoutPaymentMethodPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginPage.CheckoutPaymentMethodPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CheckoutPaymentMethodPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CheckoutPaymentMethodPage.xaml
 build_metadata.AdditionalFiles.Inflator = Runtime
 build_metadata.AdditionalFiles.NoWarn = 
 build_metadata.AdditionalFiles.EnableDiagnostics = 

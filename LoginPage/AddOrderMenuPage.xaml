@@ -62,7 +62,7 @@
                             AbsoluteLayout.LayoutBounds ="170,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Pulled pork, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -85,7 +85,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="porknachos.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -93,17 +93,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Pork Nachos" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
                             Text =" - $8.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="135,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Pulled pork, spicy white cheese sauce, and pepper jack cheese topped with tomato, Scallions and cilantro, Add BBQ sauce (+0.50)" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -126,7 +126,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="sliders.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -134,17 +134,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Pork or Chicken Sliders" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - 3 for $5.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="245,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Sauces: Chipotle, Jim Beam or Carolina Gold BBQ" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -167,25 +167,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="catfishbites.jpg"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Catfish Bites" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $6.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="135,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Catfish pieces cornmeal-battered and fried. Served with lemon and spicy cocktail sauce" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -208,7 +208,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="friedveggies.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -216,17 +216,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Fried Veggies" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $6.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="140,150"/>
                             
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Choice of okra, zucchini, squash, or Mix and Match. Served with a side of spicy ranch" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -256,25 +256,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="housesalad.jpg"
+                            ScaleX ="2.1"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="House Salad" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $7.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="135,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Mixed Greens, topped with bacon, tomato and blue cheese crumbles" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -297,25 +297,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="wedgesalad.jpg"
+                            ScaleX ="2.4"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Wedge Salad" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $7.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="140,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Iceberg lettuce wedge topped with bacon, tomato and blue cheese crumbles" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -338,25 +338,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="ceasersalad.jpg"
+                            ScaleX ="2.4"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Ceaser Salad" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $7.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="140,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Romaine lettuce, shredded Parmesan cheese and croutons tossed in Caesar dressing." TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -379,7 +379,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="sweetpotatochickensalad.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -387,17 +387,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Sweet Potato Chicken Salad" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="295,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Mixed greens, red onion, dried cranberries and goat cheese crumbles topped with chilled sweet potato crusted chicken." TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -427,7 +427,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="shrimpandgrits.png"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -435,17 +435,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Shrimp and Grits" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $13.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="180,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Sautéed shrimp with garlic served on top of cheese grits, topped with sautéed peppers and onions" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -468,7 +468,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="sweetteafriedchicken.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -476,17 +476,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Sweet Tea Fried Chicken" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="260,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Fried chicken breast marinated in sweet tea and spices, topped with a sweet tea reduction" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -509,7 +509,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="caribbeanchicken.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -517,17 +517,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Caribbean Chicken" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="200,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Grilled chicken marinated in spicy Caribbean seasoning topped with mango salsa and avocado" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -550,25 +550,25 @@
                     
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="grilledporkchops.jpg"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Grilled Pork Chops" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="200,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Two bone-in grilled pork chops" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -591,25 +591,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="newyorkstripsteak.jpg"
+                            ScaleX ="2.4"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="New York Strip Steak" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $17.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="225,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="New York Strip Steak cut in-house. Cooked to your desired temperature" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -632,7 +632,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="searedtuna.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -640,17 +640,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Seared Tuna" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $15.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="135,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Seared ahi tuna cooked to your desired temperature, topped with mango salsa and a honey lime vinaigrette drizzle" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -673,25 +673,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="captaincrunchchickentenders.jpg"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Captain Crunch Chicken Tenders" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="345,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Fried chicken tenders coated in Captain Crunch with a dipping sauce" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -714,7 +714,7 @@
                     
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="shocktopgrouperfingers.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -722,17 +722,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Shock Top Grouper Fingers" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="290,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Shock Top beer-battered grouper served with tartar sauce and a lemon extra" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -755,25 +755,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="macandcheesebar.jpg"
+                            ScaleX ="1.8"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Mac and Cheese Bar" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
                             Text =" - $8.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="220,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Cast iron skillet of mac and cheese with choice of regular cheese or spicy cheese and choice of two toppings." TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -803,7 +803,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="curlyfries.png"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -811,17 +811,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Curly Fries" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="115,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -844,7 +844,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="wingchips.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -852,17 +852,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Wing Chips" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="125,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -885,7 +885,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="sweetpotatofries.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -893,17 +893,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Sweet Potato Fries" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="200,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -926,7 +926,7 @@
                     
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="creamycabbageslaw.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -934,17 +934,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Creamy Cabbage Slaw" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
                         
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="240,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -967,25 +967,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="adluhcheesegrits.jpg"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Adluh Cheese Grits" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
                         
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="205,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1008,7 +1008,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="mashedpotatoes.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1016,17 +1016,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Mashed Potatoes" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="190,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1049,7 +1049,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="macandcheese.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1057,17 +1057,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Mac and Cheese" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="180,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1090,7 +1090,7 @@
                     
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="seasonalvegetables.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1098,17 +1098,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Seasonal Vegetables" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="220,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1131,25 +1131,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="bakedbeans.jpg"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Baked Beans" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="140,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1179,7 +1179,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="grilledcheese.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1187,17 +1187,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Grilled Cheese" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $5.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="155,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="American cheese served on multigrain or white bread" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1220,25 +1220,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="chickenbltanda.jpg"
+                            ScaleX ="2.2"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Chicken BLT and A" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $10.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="200,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Grilled chicken, bacon, lettuce, tomato and avocado on a pretzel bun" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1261,7 +1261,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="phily.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1269,17 +1269,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Philly" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $13.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="60,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Choice of shaved New York Strip steak or grilled chicken topped with mushrooms, peppers, onions and provolone cheese on a hoagie" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1302,7 +1302,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="club.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1310,17 +1310,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Club" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $10.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="50,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Ham, turkey, Swiss cheddar, lettuce, tomato, mayo amd bacon on multigrain bread" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1343,7 +1343,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="meatballsub.png"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1351,17 +1351,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Meatball Sub" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $10.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="140,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="House-made meatballs topped with marinara and mozzarella cheese. Sautéed pepper and onions on request." TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1391,7 +1391,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="baconcheeseburger.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1399,17 +1399,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Bacon Cheeseburger" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="225,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="8-ounce burger topped with bacon and your choice of cheddar, American, Swiss, provolone, pepper jack, blue cheese, or pimento cheese on a brioche bun" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1432,25 +1432,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="carolinaburger.png"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Carolina Burger" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $11.00" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="170,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="8-ounce burger topped with chili, diced onions and slaw on a brioche bun." TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1473,7 +1473,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="portobelloburger.png"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1481,17 +1481,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Portobello Burger" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" (V) - $8.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="190,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Marinated Portobello mushroom cap topped with mango salsa, lettuce, tomato and onion on a telera bun" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1514,7 +1514,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="veganbocaburger.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1522,17 +1522,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Vegan Boca Burger" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" (V) - $10.50" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="205,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="Vegan Boca Burger topped with lettuce, tomato and onion on a telera bun" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1561,7 +1561,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="tea.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1569,17 +1569,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Sweet/Unsweetend Tea" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="255,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1602,25 +1602,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="coke.png"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Coke/Diet Coke" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.00" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="170,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1643,7 +1643,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="sprite.jpg"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1651,17 +1651,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Sprite" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="70,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1684,25 +1684,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="bottledwater.png"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Bottled Water" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="155,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1725,7 +1725,7 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
+                            Source ="lemonade.png"
                             ScaleX ="2"
                             ScaleY ="1"
                             
@@ -1733,17 +1733,17 @@
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Lemonade" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="120,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"
@@ -1766,25 +1766,25 @@
 
                     <AbsoluteLayout>
                         <Image BackgroundColor ="Orange"
-                            Source ="thechickennachos.png"
-                            ScaleX ="2"
+                            Source ="orangejuice.jpg"
+                            ScaleX ="2.3"
                             ScaleY ="1"
                             
                             WidthRequest ="450" HeightRequest="150"
                             AbsoluteLayout.LayoutBounds ="0, 0"/>
 
                         <Label
-                            Text ="Chicken Nachos" TextColor ="White"
+                            Text ="Orange Juice" TextColor ="White"
                             FontSize ="Medium"
                             AbsoluteLayout.LayoutBounds ="0,150"/>
 
                         <Label
-                            Text =" - $8.50" TextColor ="White"
+                            Text =" - $2.00" TextColor ="White"
                             FontSize ="Medium"
-                            AbsoluteLayout.LayoutBounds ="170,150"/>
+                            AbsoluteLayout.LayoutBounds ="140,150"/>
 
                         <Label
-                            Text ="Pulled chicken, spicy white cheese sauce, and cheddar cheese topped with red onions and cilantro. Add BBQ sauce (+0.50)" TextColor ="White"
+                            Text ="" TextColor ="White"
                             MaxLines ="5"
                             LineBreakMode ="WordWrap"
                             FontSize ="15"

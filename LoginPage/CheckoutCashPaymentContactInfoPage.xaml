@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage.CheckoutCashPaymentContactInfoPage"
+             xmlns:views="clr-namespace:LoginPage"
+             Title="CheckoutCashPaymentContactInfoPage">
+    <VerticalStackLayout>
+        <views:WaiterTopBarView/>
+
+        <Label 
+            Text="Table_Name"
+            FontSize ="Large"/>
+
+        <Border 
+            Margin ="0,20,0,0" Padding ="40,0,40,10"
+            BackgroundColor ="DimGray"
+            StrokeShape ="RoundRectangle, 20"
+            WidthRequest ="1800" HeightRequest ="800">
+
+            <VerticalStackLayout>
+                <Label
+                    Text ="Enter Contact Information for Bill"
+                    FontSize ="Large"
+                    HorizontalOptions ="Center"/>
+
+                <Label
+                    Margin ="360,40,0,0"
+                    Text ="Name*"
+                    FontSize ="Medium"/>
+                <Entry
+                    Placeholder ="Name" PlaceholderColor ="LightGray"
+                    FontSize ="Medium"
+                    HorizontalTextAlignment ="Center"
+                    WidthRequest ="1000"/>
+                
+                <Label
+                    Margin ="360,40,0,0"
+                    Text ="Email*"
+                    FontSize ="Medium"/>
+                <Entry
+                    Placeholder ="Email" PlaceholderColor ="LightGray"
+                    FontSize ="Medium"
+                    HorizontalTextAlignment ="Center"
+                    WidthRequest ="1000"/>
+                
+                <Label
+                    Margin ="360,40,0,0"
+                    Text ="Phone Number*"
+                    FontSize ="Medium"/>
+                <Entry
+                    Placeholder ="Phone Number" PlaceholderColor ="LightGray"
+                    FontSize ="Medium"
+                    HorizontalTextAlignment ="Center"
+                    WidthRequest ="1000"/>
+
+                <Label
+                    Margin ="0,30,0,0"
+                    Text = "Fields Marked with an asterisk (*) are required"
+                    FontSize ="Medium" FontAttributes ="Italic,Bold"
+                    CharacterSpacing ="1"
+                    HorizontalOptions ="Center"/>
+                
+                <Button
+                    Margin ="0,250,0,0"
+                    Text ="Continue"
+                    FontSize ="Medium"
+                    WidthRequest ="300"
+                    Clicked ="Button_Clicked"/>
+
+            </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

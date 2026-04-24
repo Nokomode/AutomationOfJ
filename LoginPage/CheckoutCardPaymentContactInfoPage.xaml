@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage.CheckoutCardPaymentContactInfoPage"
+             xmlns:views="clr-namespace:LoginPage"
+             Title="CheckoutCardPaymentContactInfoPage">
+    <VerticalStackLayout>
+        
+        <views:WaiterTopBarView/>
+
+        <Label
+            Text ="Table Name"
+            FontSize ="Large"/>
+
+        <Border 
+            Margin ="0,20,0,0" Padding ="40,0,40,10"
+            BackgroundColor ="DimGray"
+            StrokeShape ="RoundRectangle, 20"
+            WidthRequest ="1800" HeightRequest ="800">
+
+            <Grid RowDefinitions ="500,*,*" ColumnDefinitions ="1100,*,600">
+                <AbsoluteLayout
+                    Grid.Row ="0" Grid.Column ="0"
+                    BackgroundColor ="Transparent"
+                    WidthRequest ="1100" HeightRequest ="500">
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="225,0"
+                        Text ="Enter Payment Information for Bill" TextColor ="White"
+                        FontSize ="Large"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="0,70"
+                        Text ="Card Number*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                        AbsoluteLayout.LayoutBounds ="0,100"
+                        Margin ="0,0,0,0"
+                        Placeholder ="Card Number" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="700" HeightRequest ="20"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="0,180"
+                        Text ="Name On Card*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                        AbsoluteLayout.LayoutBounds ="0,210"
+                        Margin ="0,0,0,0"
+                        Placeholder ="Name On Card" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="700" HeightRequest ="20"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="0,290"
+                        Margin ="0,0,0,0"
+                        Text ="Card Expiration Date*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                        AbsoluteLayout.LayoutBounds ="0,320"
+                        Margin ="0,0,0,0"
+                        Placeholder ="MM/YY" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="340" HeightRequest ="20"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="400,290"
+                        Margin ="0,0,0,0"
+                        Text ="CCV*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                         AbsoluteLayout.LayoutBounds ="400,320"
+                        Margin ="0,0,0,0"
+                        Placeholder ="CCV" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="200" HeightRequest ="20"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="660,290"
+                        Margin ="0,0,0,0"
+                        Text ="Zip Code*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                         AbsoluteLayout.LayoutBounds ="660,320"
+                        Margin ="0,0,360,0"
+                        Placeholder ="Zip Code" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="300" HeightRequest ="20"/>
+                </AbsoluteLayout>
+
+                <BoxView 
+                    Grid.Column ="1"
+                    BackgroundColor ="White"
+                    WidthRequest ="1" HeightRequest ="646"/>
+
+                <VerticalStackLayout
+                    Spacing ="30" Padding ="30,0,0,0"
+                    BackgroundColor ="Transparent"
+                    Grid.Row ="0" Grid.Column ="2"
+                    WidthRequest ="600" HeightRequest ="500">
+
+                    <Label
+                        Margin ="0,0,0,10"
+                        HorizontalOptions ="Center"
+                        Text ="Enter Payment Information for Bill" TextColor ="White"
+                        FontSize ="Large"/>
+
+                    <Label
+                        Text ="Name*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                        Margin ="0,0,0,0"
+                        Placeholder ="Name" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="600" HeightRequest ="20"/>
+                    
+                    <Label
+                        Text ="Email*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                        AbsoluteLayout.LayoutBounds ="0,100"
+                        Margin ="0,0,0,0"
+                        Placeholder ="Email" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="600" HeightRequest ="20"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="0,70"
+                        Text ="Phone Number*"
+                        FontSize ="Medium"/>
+                    <Entry 
+                        AbsoluteLayout.LayoutBounds ="0,100"
+                        Margin ="0,0,0,0"
+                        Placeholder ="Phone Number" PlaceholderColor ="LightGray"
+                        FontSize ="Medium"
+                        HorizontalTextAlignment ="Center"
+                        WidthRequest ="600" HeightRequest ="20"/>
+                </VerticalStackLayout>
+
+                <BoxView
+                    Grid.Row ="1" Grid.ColumnSpan ="3"
+                    BackgroundColor ="White"
+                    HeightRequest ="1" WidthRequest ="1800"/>
+
+                <Label
+                    Grid.Row ="1" HorizontalOptions ="Start"
+                    Margin ="0,40,0,0"
+                    Text = "Fields Marked with an asterisk (*) are required"
+                    FontSize ="Medium" FontAttributes ="Italic,Bold"
+                    CharacterSpacing ="1"
+                     WidthRequest ="600" HeightRequest ="30"/>
+
+                <Button 
+                    Grid.Row ="2"  HorizontalOptions ="End"
+                    Margin ="860,0,0,0"
+                    Text="Continue"
+                    FontSize ="Medium"  
+                    WidthRequest ="400" HeightRequest ="50"
+                    Clicked ="Button_Clicked"/>
+            </Grid>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

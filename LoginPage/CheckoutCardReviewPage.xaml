@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage.CheckoutCardReviewPage"
+             xmlns:views="clr-namespace:LoginPage"
+             Title="CheckoutCardReviewPage">
+    <VerticalStackLayout>
+
+        <views:WaiterTopBarView/>
+
+        <Label 
+            Text="Table_Name"
+            FontSize ="Large"/>
+        
+        <Border 
+            Margin ="0,20,0,0" Padding ="40,0,40,10"
+            BackgroundColor ="DimGray"
+            StrokeShape ="RoundRectangle, 20"
+            WidthRequest ="1800" HeightRequest ="800">
+
+            <AbsoluteLayout
+                WidthRequest ="1720" HeightRequest ="800">
+
+                <!--  Customer Info Block Start  -->
+                <Label
+                    AbsoluteLayout.LayoutBounds ="660,0"
+                    Text ="Review Information for Bill"
+                    FontSize ="Large"
+                    WidthRequest ="400"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="300, 100"
+                        Text ="Customer Info:"
+                        FontSize ="Header" FontAttributes ="Bold"/>
+                    
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="305,200"
+                        Text ="Name:"
+                        FontSize ="Large"/>
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="445,200"
+                        Text ="Insert_Name"
+                        FontSize ="Large"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="305,250"
+                        Text ="Email:"
+                        FontSize ="Large"/>
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="445,250"
+                        Text ="Insert_Email"
+                        FontSize ="Large"/>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="305,300"
+                        Text ="Phone#:"
+                        FontSize ="Large"/>
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="445,300"
+                        Text ="XXX-XXX-XXXX"
+                        FontSize ="Large"/>
+                <!--  Customer Info Block End  -->
+
+                
+                <!--  Order Info Block Start -->
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="1200, 100"
+                        Text ="Orders:"
+                        FontSize ="Header" FontAttributes ="Bold"/>
+                    
+                    <VerticalStackLayout
+                            AbsoluteLayout.LayoutBounds ="1205,200">
+
+                        <Label
+                            Text ="Order 1"
+                            FontSize ="Large"/>
+
+                        <HorizontalStackLayout>
+
+                            <Label
+                                Margin ="15,0,0,0"
+                                Text ="#"
+                                FontSize ="Medium"/>
+                            <Label
+                                Margin ="20,0,0,0"
+                                Text ="Menu_Item_1"
+                                FontSize ="Medium"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+
+                            <Label
+                                Margin ="15,0,0,0"
+                                Text ="#"
+                                FontSize ="Medium"/>
+                            <Label
+                                Margin ="20,0,0,0"
+                                Text ="Menu_Item_2"
+                                FontSize ="Medium"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="1200,600"
+                        Text ="Total:  $"
+                        FontSize ="Large"/>
+                    <Label
+                        AbsoluteLayout.LayoutBounds ="1320,600"
+                        Text ="##.##"
+                        FontSize ="Large"/>
+                <!--  Order Info Block End -->
+
+                <Button
+                   AbsoluteLayout.LayoutBounds ="660,700"
+                    Text ="Confirm"
+                    FontSize ="Medium"
+                    WidthRequest ="400" HeightRequest ="50"
+                    Clicked ="ConfirmButton_Clicked"/>
+
+            </AbsoluteLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

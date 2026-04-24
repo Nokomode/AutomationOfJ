@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutomationOfJ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+83587c4fca1b60ecbfd31cb89d7ccc91238a9b27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c4e21d3a8fb78b6e11618d1a72f8aec125550f34")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutomationOfJ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutomationOfJ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

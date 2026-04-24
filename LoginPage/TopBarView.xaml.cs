@@ -19,12 +19,12 @@ public partial class TopBarView : ContentView
 
     private async void OnSalesClicked(Object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new TESTINGPAGE());
+        
     }
 
     private async void OnEmployeeProfilesClicked(Object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new WaiterTableLayoutPage());
+        Navigation.PushAsync(new WaiterTableLayoutPage());
     }
 
     private async void OnRefundsClicked(Object sender, EventArgs e)

@@ -8,18 +8,22 @@ import java.util.Optional;
 @Table(name = "Shift")
 public class Shift {
 
+    //This will make shifts for employees.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "Shift_ID")
     private int shiftID;
 
+    //This will make sure that the shift is linked to a specific employee.
     @ManyToOne
     @JoinColumn(name = "Employee_ID", nullable = false)
     private User employee;
 
+    //This will make sure the shift is linked to a specific date.
     @Column (name = "Date")
     private LocalDate date;
 
+    //This will make sure the shift has a start time and end time.
     @Column (name = "Start_Time")
     private LocalDateTime startTime;
 
@@ -31,6 +35,7 @@ public class Shift {
 
     }
 
+    //Constructor
     public Shift(LocalDateTime startTime, LocalDateTime endTime, int shiftId, User employee, LocalDate date) {
         this.startTime = startTime;
         this.endTime = endTime;
@@ -39,6 +44,7 @@ public class Shift {
         this.date = date;
     }
 
+    //Constructor
     public Shift(LocalDateTime startTime, LocalDateTime endTime, User employee, LocalDate date) {
         this.startTime = startTime;
         this.endTime = endTime;
@@ -46,6 +52,7 @@ public class Shift {
         this.date = date;
     }
 
+    //Constructor
     public Shift(LocalDateTime endTime, int shiftId) {
         this.endTime = endTime;
         this.shiftID = shiftId;

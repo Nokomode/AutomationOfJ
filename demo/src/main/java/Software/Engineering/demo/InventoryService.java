@@ -9,14 +9,16 @@ public class InventoryService {
     public InventoryService(InventoryRepository inventoryRepo) {
         this.inventoryRepo = inventoryRepo;
     }
+
+    //This function searches through the inventory and returns the searched item if it is found, if not it returns null.
 public InventoryItem getItemByName(String name){
-    return inventoryRepo.findByItemName(name).orElse(null);
+    return inventoryRepo.findById(name).orElse(null);
 
 }
 
-  public InventoryItem[] getAllInventory() {
-        List<InventoryItem> items = inventoryRepo.findAll();
-        return items.toArray(new InventoryItem[0]);
+//This function returns the  inventory as a list.
+  public List<InventoryItem> getAllInventory() {
+        return inventoryRepo.findAll();
     }
 
 

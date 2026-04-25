@@ -10,6 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
+    //This uses custom authentication logic to check if credentials are correct.
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -23,6 +24,7 @@ public class SecurityConfig {
         return http.build();
     }
 
+    //This function will look through the database to find the specific user.
     @Bean
     public UserDetailsService users(UserRepository userRepo) {
         return username -> {

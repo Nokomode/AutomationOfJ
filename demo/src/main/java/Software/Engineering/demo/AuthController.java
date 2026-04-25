@@ -10,10 +10,12 @@ public class AuthController {
 
     private final AuthService authService;
 
+    //Constructor injection for AuthService
     public AuthController(AuthService authService) {
         this.authService = authService;
     }
 
+    //This function handles login requests. It takes a LoginRequest object as input, which contains the employee ID and password. It authenticates the user and returns a login response if sucessful, or an error message if incorrect.
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
         User success = authService.login(request.getEmployeeID(), request.getPassword());
@@ -31,6 +33,7 @@ public class AuthController {
         }
     }
 
+    //This function handles registration requests. It takes a RegisterRequest object as input, which contains the employee ID, password, role, first name, last name, salary, phone number, and email. If sucessful the account is created, if there is a conflict an error message is returned.
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
 

@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.util.Optional;
 
-
+//This handles login requests. If the credentials are correct a response is returned, if not an error message is returned.
 public class LoginRequest {
     private String employeeID;
     private String password;

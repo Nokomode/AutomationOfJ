@@ -12,7 +12,7 @@ public class RegisterRequest {
 
     public RegisterRequest() {}
 
-
+//Getters and Setters
     public String getEmployeeID() { return employeeID; }
     public void setEmployeeID(String username) { this.employeeID = username; }
 

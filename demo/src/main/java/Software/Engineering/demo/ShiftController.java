@@ -15,11 +15,13 @@ public class ShiftController {
     private final ShiftService shiftService;
     private final UserRepository userRepository;
     
+    //Handles requests related to shifts, like searching for a shift by employee ID or shift ID, or everything as a whole.
     public ShiftController(ShiftService shiftService, UserRepository userRepository) {
         this.shiftService = shiftService;
         this.userRepository = userRepository;
     }
 
+    //This function looks through the shifts and finds the shift by its shift ID.
     @PostMapping("/getByShiftID")
     public ResponseEntity<Shift> getShiftByShiftID(@RequestBody ShiftRequest request) {
 
@@ -32,6 +34,7 @@ public class ShiftController {
         
     }
 
+    //This function goes through all of the shifts and finds the shifts that are linked to the employee ID.
     @PostMapping("/getShiftsByEmployeeID")
     public ResponseEntity<List<Shift>> getShiftsByEmployeeId(@RequestBody ShiftRequest request) {
         List<Shift> shifts = Arrays.asList(shiftService.getShiftByEmployeeId(request.getEmployeeID()));
@@ -39,6 +42,7 @@ public class ShiftController {
         return ResponseEntity.ok(shifts);
     }
 
+    //This function will put all of the shifts into a list and return it.
     @PostMapping("/getAllShifts")
     public ResponseEntity<List<Shift>> getAllShifts() {
 

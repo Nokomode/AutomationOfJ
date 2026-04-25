@@ -12,10 +12,6 @@ public class InventoryItem {
     @Column(name = "Quantity")
     private int quantity;
 
-    public InventoryItem() {
-    
-    }
-
 
     public InventoryItem(String itemName, int quantity) {
         this.itemName = itemName;

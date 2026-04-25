@@ -17,6 +17,7 @@ public class User {
 
     }
 
+    //Constructor
     public User(String username, String password, String role, String firstName, String lastName, double salary, String phone, String email ) {
         this.employeeID = username;
         this.passwordHash = password;
@@ -28,6 +29,7 @@ public class User {
         this.email = email;
     }
 
+    //This will store the employee ID, password, role, first name, last name, salary, phone number and email of the user in the database.
     @Id
     @Column(name = "Employee_ID")
     private String employeeID;
@@ -54,7 +56,7 @@ public class User {
     private String phone;
 
 
-
+//Getters for the user class.
     public String getEmployeeID() {return employeeID;}
     public String getRole() {return role;}
     public String getPasswordHash() {return passwordHash;}

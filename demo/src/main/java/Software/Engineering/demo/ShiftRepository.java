@@ -10,6 +10,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.*;
 
+//Custom repository to handle shift requests in the database.
 @Repository
 public interface ShiftRepository extends JpaRepository<Shift, Integer>{
     Optional<Shift> findById(int id);

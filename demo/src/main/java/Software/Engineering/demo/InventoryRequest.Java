@@ -5,11 +5,6 @@ public class InventoryRequest {
     private String itemName;
     private int quantity;
 
-    public class InventoryRequest {
-
-        Private String itemName;
-        Private int quantity;
-
 
 //Getters and Setters
         public String getItemName() {

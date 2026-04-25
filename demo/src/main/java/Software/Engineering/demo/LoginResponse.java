@@ -10,6 +10,7 @@ public class LoginResponse {
 
     }
 
+    //Getters and Setters
     public String getUsername() {
         return this.username;
     }

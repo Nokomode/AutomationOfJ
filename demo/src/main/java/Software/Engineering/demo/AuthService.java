@@ -5,6 +5,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.time.LocalDateTime;
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,7 +20,7 @@ public class AuthService {
         this.userRepository = userRepository;
         this.shiftRepository = shiftRepository;
     }
-
+    /// Gets login information from the frontend and attempts to call login service to perform the login
     public User login(String username, String password) {
         Optional<User> userOpt = userRepository.findById(username);
         if (userOpt.isEmpty()) {
@@ -30,9 +32,9 @@ public class AuthService {
         if (encoder.matches(password, user.getPasswordHash())) {
 
             //When the employee Logs in they will automatically  be clocked in and start their shift. Here is where that will be implemented. We will also need to add a clock out function when the employee logs out.
-            LocalDateTime startTime = LocalDateTime.now();
+            LocalTime startTime = LocalTime.now();
             ShiftStart.setStartTime(startTime);
-            Shift newShift = new Shift(startTime, LocalDateTime.now(), user, LocalDate.now());
+            Shift newShift = new Shift(startTime, LocalTime.now(), user, LocalDate.now());
             shiftRepository.save(newShift);
 
 
@@ -43,20 +45,27 @@ public class AuthService {
     }
 
 
-    //This will find the user that's logging out/clocking out current shift
-    public void logout(String username) {
-        List<Shift> activeShiftOpt = shiftRepository.findByEmployeeEmployeeID(username);
-
+    ///This will find the user that's logging out/clocking out current shift
+    public boolean logout(String username) {
+        List<Shift> activeShiftOpt = shiftRepository.findByEmployeeEmployeeId(username);
+        System.out.println("Search for: " + username);
         //Loop through the list and find the shift with the same start time
-        LocalDateTime start = ShiftStart.startTime;
         for (Shift shift : activeShiftOpt) {
-            if (shift.getStartTime() == start ) {
-                shiftRepository.save(new Shift(LocalDateTime.now(), shift.getShiftId()));
+            System.out.println(shift.getStartTime());
+            System.out.println(ShiftStart.startTime.truncatedTo(ChronoUnit.SECONDS));
+            System.out.println("\n");
+            if (shift.getStartTime().truncatedTo(ChronoUnit.MINUTES)
+                    .equals(ShiftStart.startTime.truncatedTo(ChronoUnit.MINUTES)) ) {
+                shift.setEndTime(LocalTime.now());
+                shiftRepository.save(shift);
+                return true;
             }
         }
 
+        return false;
     }
 
+    /// Attempts to register a user, returns false if failed such as a username already exists
     public boolean register(String username, String password, String role, String firstName, String lastName, double salary, String phone, String email) {
         if (username == null || username.isBlank()) {
             return false;
@@ -83,14 +92,13 @@ public class AuthService {
             return false;
         }
 
-        // Testing commit
 
-        // Check password length
+        /// Check password length
         if (password.length() < 8) {
             return false;
         }
 
-        // Check role is valid
+        /// Check role is valid
         List<String> validRoles = List.of("Manager", "Wait Staff", "Busboy", "Chef");
         if (!validRoles.contains(role)) {
             return false;

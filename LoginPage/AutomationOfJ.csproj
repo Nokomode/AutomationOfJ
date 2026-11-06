@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
@@ -38,6 +38,10 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows' and '$(RuntimeIdentifierOverride)' != ''">
+		<RuntimeIdentifier>$(RuntimeIdentifierOverride)</RuntimeIdentifier>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -57,8 +61,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.51" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7" />
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.1721" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -67,6 +72,12 @@
 	  </Compile>
 	  <Compile Update="ManagerDashboardPage.xaml.cs">
 	    <DependentUpon>ManagerDashboardPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="AllEmployeesPage.xaml.cs">
+	    <DependentUpon>AllEmployeesPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="TablePopUpView.xaml.cs">
+	    <DependentUpon>TablePopUpView.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="TableLayoutPage.xaml.cs">
 	    <DependentUpon>TableLayoutPage.xaml</DependentUpon>
@@ -77,16 +88,46 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AddOrderMenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="App\RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="CheckoutCardPaymentContactInfoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CheckoutCardReviewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CheckoutCashPaymentContactInfoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CheckoutPaymentMethodPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ManagerDashboardPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AllEmployeesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="OrderQueuePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TablePopUpView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TableLayoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TopBarView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="WaiterDashboardPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="WaiterTopBarView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -4,12 +4,64 @@
              x:Class="LoginPage.RefundsPage"
              Title="Refunds"
              xmlns:views="clr-namespace:LoginPage">
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
 
-        <views:TopBarView x:Name="TopBar"/>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+            <ContentView x:Name="TopBarContainer" Margin="0,0,0,20"/>
+
+     
+            <!-- Orders List -->
+            <CollectionView ItemsSource="{Binding Orders}" Margin="0,0,0,30" WidthRequest="600">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView Padding="20,8">
+                            <Border BackgroundColor="#2a2a2a"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 15"
+                                Padding="18,14">
+                                <Grid ColumnDefinitions="150,150" ColumnSpacing="150" HorizontalOptions="Center">
+
+                                    <!-- LEFT: Order info -->
+                                    <VerticalStackLayout Grid.Column="0" Spacing="4" HorizontalOptions="Center">
+                                        <HorizontalStackLayout Spacing="10">
+                                            <Label Text="{Binding OrderNo, StringFormat='Order #{0}'}"
+                                               TextColor="White" FontSize="16" FontAttributes="Bold"
+                                               VerticalOptions="Center"/>
+                                            <Image Source="{Binding StatusIcon}"
+                                               WidthRequest="20" HeightRequest="20"
+                                               VerticalOptions="Center"/>
+                                            <Label Text="{Binding TableId}"
+                                               TextColor="White" FontSize="15"
+                                               VerticalOptions="Center" Margin="10,0,0,0"/>
+                                            <Label Text="{Binding TimeAgo}"
+                                               TextColor="#aaaaaa" FontSize="13"
+                                               VerticalOptions="Center"/>
+                                        </HorizontalStackLayout>
+                                        <Label Text="{Binding TotalPrice, StringFormat='${0:F2}'}"
+                                           TextColor="White" FontSize="14"/>
+                                        <Label Text="{Binding ItemSummary}"
+                                           TextColor="White" FontSize="14"
+                                           LineBreakMode="WordWrap" Margin="0,4,0,0"/>
+                                    </VerticalStackLayout>
+
+                                    <!-- Middle: Ask for Refund button -->
+                                    <VerticalStackLayout Grid.Column="1" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Button ClassId="RefundButton" Text="Confirm Refund?" 
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.ConfirmRefundCommand}"
+                                                CommandParameter="{Binding .}"/>
+                                    </VerticalStackLayout>
+
+                                    <!-- RIGHT: X button and Update Status Picker -->
+                                    
+
+                                </Grid>
+                            </Border>
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

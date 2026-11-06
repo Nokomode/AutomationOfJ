@@ -6,6 +6,7 @@ import org.springframework.cglib.core.Local;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/// Data transfer object for shift data
 public class ShiftRequest {
     private int shiftID;
     private String employeeID;

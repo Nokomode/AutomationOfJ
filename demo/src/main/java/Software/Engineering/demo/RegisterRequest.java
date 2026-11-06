@@ -1,5 +1,6 @@
 package Software.Engineering.demo;
 
+/// Data transfer object for registration
 public class RegisterRequest {
     private String employeeID;
     private String password;
@@ -12,7 +13,7 @@ public class RegisterRequest {
 
     public RegisterRequest() {}
 
-
+    /// getters and setters
     public String getEmployeeID() { return employeeID; }
     public void setEmployeeID(String username) { this.employeeID = username; }
 

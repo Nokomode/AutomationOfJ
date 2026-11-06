@@ -4,12 +4,180 @@
              x:Class="LoginPage.EmployeeProfilesPage"
              Title="Employee Profiles"
              xmlns:views="clr-namespace:LoginPage">
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <ContentView x:Name="TopBarContainer" Margin="0,0,0,40"/>
 
-        <views:TopBarView x:Name="TopBar"/>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            <!-- Employee Info Section -->
+            <Border BackgroundColor="#2a2a2a" Margin="10" 
+               HorizontalOptions="Center" MinimumWidthRequest="225" StrokeShape="RoundRectangle 15" MinimumHeightRequest="150">
+                <VerticalStackLayout>
+                    <!-- Name and Role Display -->
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label x:Name="WelcomeNameLabel" Text="Welcome" HorizontalOptions="Center" FontSize="25" Padding="10"/>
+                        <Label x:Name="WelcomeRoleLabel" Text="Role" HorizontalOptions="Center" FontSize="25" Padding="10"/>
+                    </VerticalStackLayout>
+
+                    <!-- Edit Mode -->
+                    <VerticalStackLayout x:Name="NameEditMode" IsVisible="False" Spacing="5" Padding="10">
+                        <Label Text="First Name:" HorizontalOptions="Center" TextColor="White"/>
+                        <Entry x:Name="FirstNameEntry" TextColor="White" BackgroundColor="#3a3a3a" HorizontalOptions="Center" WidthRequest="200"/>
+                        <Label Text="Last Name:" HorizontalOptions="Center" TextColor="White"/>
+                        <Entry x:Name="LastNameEntry" TextColor="White" BackgroundColor="#3a3a3a" HorizontalOptions="Center" WidthRequest="200"/>
+                        <Label Text="Role:" HorizontalOptions="Center" TextColor="White"/>
+                        <Picker x:Name="RolePicker" TextColor="White" BackgroundColor="#3a3a3a" HorizontalOptions="Center" WidthRequest="200">
+                            <Picker.Items>
+                                <x:String>Wait Staff</x:String>
+                                <x:String>Manager</x:String>
+                                <x:String>Cook</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+            
+            
+            <!-- Employee ID Section -->
+            <Border BackgroundColor="#2a2a2a" Margin="20" 
+                 HorizontalOptions="Center" MinimumWidthRequest="300" StrokeShape="RoundRectangle 15" MinimumHeightRequest="150">
+                <VerticalStackLayout VerticalOptions="Center">
+                    <Label x:Name="EmployeeIdLabel" Text="Employee ID:" HorizontalOptions="Center" FontSize="25" Padding="10"/>
+                    <Label x:Name="EmployeeIdLabelText" Text="Role" HorizontalOptions="Center" FontSize="25" Padding="10"/>
+                </VerticalStackLayout>
+            </Border>
+            
+            
+            <!-- Contact Info Section -->
+            <Border BackgroundColor="#2a2a2a" Margin="20" 
+                HorizontalOptions="Center" MinimumWidthRequest="450" StrokeShape="RoundRectangle 15" MinimumHeightRequest="150">
+                <VerticalStackLayout>
+                    <Label Text="Contact Info:" HorizontalOptions="Center" Margin="10"/>
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <VerticalStackLayout VerticalOptions="Center" Margin="0,0,150,0">
+                                <Label x:Name="EmailLabel" Text="Email:" HorizontalOptions="Center" FontSize="15" Padding="10"/>
+                                <Label x:Name="EmailLabelText" Text="Email" HorizontalOptions="Center" FontSize="15" Padding="10"/>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label x:Name="PhoneLabel" Text="Phone #:" HorizontalOptions="Center" FontSize="15" Padding="10"/>
+                                <Label x:Name="PhoneLabelText" Text="Phone" HorizontalOptions="Center" FontSize="15" Padding="10"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <!-- Edit Mode -->
+                    <HorizontalStackLayout x:Name="ContactEditMode" HorizontalOptions="Center" IsVisible="False">
+                        <VerticalStackLayout VerticalOptions="Center" Margin="0,0,50,0">
+                            <Label Text="Email:" HorizontalOptions="Center" FontSize="15" Padding="10"/>
+                            <Entry x:Name="EmailEntry" TextColor="White" BackgroundColor="#3a3a3a" 
+                       WidthRequest="150" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Label Text="Phone #:" HorizontalOptions="Center" FontSize="15" Padding="10"/>
+                            <Entry x:Name="PhoneEntry" TextColor="White" BackgroundColor="#3a3a3a" 
+                       Keyboard="Telephone" WidthRequest="150" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+
+                    <!-- Buttons to save, cancel, or start edit contact info -->
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="10">
+                        <Button x:Name="EditButton" Text="Edit" BackgroundColor="#9880E5" TextColor="White"
+                    CornerRadius="8" WidthRequest="80" Clicked="OnEditClicked"/>
+                        <Button x:Name="SaveButton" Text="Save" BackgroundColor="#9880E5" TextColor="White"
+                    CornerRadius="8" WidthRequest="80" IsVisible="False" Clicked="OnSaveClicked"/>
+                        <Button x:Name="CancelButton" Text="Cancel" BackgroundColor="#E58080" TextColor="White"
+                    CornerRadius="8" WidthRequest="80" IsVisible="False" Clicked="OnCancelClicked"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+            
+            <!-- Table Assignments Section-->
+            <Border BackgroundColor="#2a2a2a" Margin="20" 
+                HorizontalOptions="Center" MinimumWidthRequest="450" StrokeShape="RoundRectangle 15" MinimumHeightRequest="150" x:Name="TableLayoutBorder">
+                <VerticalStackLayout>
+                    <Label Text="Table Assignments:" HorizontalOptions="Center" Margin="10"/>
+                    <VerticalStackLayout Margin="10">
+                        <Label x:Name="TableAssignmentLabel" Text="Tables:" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+
+
+
+            <!-- Shifts Section -->
+            <Border BackgroundColor="#2a2a2a" Margin="20" 
+   HorizontalOptions="Center" WidthRequest="900" StrokeShape="RoundRectangle 15">
+
+                <CollectionView ItemsSource="{Binding Shifts}">
+
+                    <!-- Purple Header Row -->
+                    <CollectionView.Header>
+
+                        <Grid ColumnDefinitions="*,Auto,*,Auto,*,Auto,*,Auto,*,Auto,*" BackgroundColor="#9880E5" Padding="10" HeightRequest="40">
+
+                            <Label Grid.Column="0" Text="Date" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="White"/>
+                            <BoxView Grid.Column="1" 
+                   BackgroundColor="#444444" HeightRequest="40" WidthRequest="1"/>
+
+                            <Label Grid.Column="2" Text="Rate" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="White"/>
+                            <BoxView Grid.Column="3" 
+                   BackgroundColor="#444444" HeightRequest="40" WidthRequest="1"/>
+
+                            <Label Grid.Column="4" Text="Start Time" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="White"/>
+                            <BoxView Grid.Column="5" 
+                   BackgroundColor="#444444" HeightRequest="40" WidthRequest="1"/>
+
+                            <Label Grid.Column="6" Text="End Time" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="White"/>
+                            <BoxView Grid.Column="7" 
+                   BackgroundColor="#444444" HeightRequest="40" WidthRequest="1"/>
+
+                            <Label Grid.Column="8" Text="Total Hours" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="White"/>
+                            <BoxView Grid.Column="9" 
+                   BackgroundColor="#444444" HeightRequest="40" WidthRequest="1"/>
+
+                            <Label Grid.Column="10" Text="Pay" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="White"/>
+                        </Grid>
+                    </CollectionView.Header>
+
+                    <!-- Data Rows -->
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto,*,Auto,*,Auto,*,Auto,*,Auto,*" Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="1"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Date}" HorizontalOptions="Center" TextColor="White"/>
+                                <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#444444" HeightRequest="70" WidthRequest="1"/>
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding Rate}" HorizontalOptions="Center" TextColor="White"/>
+                                <BoxView Grid.Row="0" Grid.Column="3" BackgroundColor="#444444" HeightRequest="70" WidthRequest="1"/>
+                                <Label Grid.Row="0" Grid.Column="4" Text="{Binding StartTime}" HorizontalOptions="Center" TextColor="White"/>
+                                <BoxView Grid.Row="0" Grid.Column="5" BackgroundColor="#444444" HeightRequest="70" WidthRequest="1"/>
+                                <Label Grid.Row="0" Grid.Column="6" Text="{Binding EndTime}" HorizontalOptions="Center" TextColor="White"/>
+                                <BoxView Grid.Row="0" Grid.Column="7" BackgroundColor="#444444" HeightRequest="70" WidthRequest="1"/>
+                                <Label Grid.Row="0" Grid.Column="8" Text="{Binding TotalHours}" HorizontalOptions="Center" TextColor="White"/>
+                                <BoxView Grid.Row="0" Grid.Column="9" BackgroundColor="#444444" HeightRequest="70" WidthRequest="1"/>
+                                <Label Grid.Row="0" Grid.Column="10" Text="{Binding Pay}" HorizontalOptions="Center" TextColor="White"/>
+
+                                <!-- Horizontal row divider -->
+                                <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="11" BackgroundColor="#444444" HeightRequest="1"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
 </ContentPage>

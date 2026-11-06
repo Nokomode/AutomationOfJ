@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.util.Optional;
 
-
+/// Login request stores only login information, it is a Data Transfer Object
 public class LoginRequest {
     private String employeeID;
     private String password;

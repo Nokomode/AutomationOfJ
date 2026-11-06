@@ -4,12 +4,37 @@
              x:Class="LoginPage.SalesPage"
              Title="Sales"
              xmlns:views="clr-namespace:LoginPage">
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
 
-        <views:TopBarView x:Name="TopBar"/>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            <!-- Sales Views -->
+            <ContentView x:Name="TopBarContainer" Margin="0,0,0,20"/>
+            <CollectionView ItemsSource="{Binding MenuItems}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <Border BackgroundColor="#2a2a2a" Padding="15" Margin="20"
+                        HorizontalOptions="Center" MinimumWidthRequest="400" MaximumWidthRequest="600"
+                        StrokeShape="RoundRectangle 15" StrokeThickness="0">
+                                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+
+                                    <!-- Item Name, Times Ordered, and Revenue labels -->
+                                    <VerticalStackLayout VerticalOptions="Center" WidthRequest="150">
+                                        <Label Text="{Binding MenuItemName}" TextColor="White" 
+                                               HorizontalOptions="Center" FontAttributes="Bold" TextDecorations="Underline"/>
+                                        <Label Text="{Binding TimesOrdered}" TextColor="White" 
+                                               HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Revenue}" TextColor="White" 
+                                               HorizontalOptions="Center"/>
+                                    </VerticalStackLayout>
+                                    
+                                </HorizontalStackLayout>
+                            </Border>
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

@@ -16,10 +16,9 @@ namespace LoginPage
             client = httpClient;
         }
 
+        // Takes username and password, sends them to the backend, and returns a LoginResponse if successful, or null if failed.
         public async Task<LoginResponse> LoginAsync(string username, string password)
         {
-            /* ---------- API CALL ---------- */
-
 
 
             var loginRequest = new LoginRequest
@@ -70,9 +69,10 @@ namespace LoginPage
             }
         }
 
-        public async Task<bool> RegisterAsync(User newUser)
+        // Takes a User object, sends it to the backend to register, and returns true if successful, false if failed.
+        public async Task<bool> RegisterAsync(RegisterRequest newUser)
         {
-            /* ---------- API CALL ---------- */
+     
             string json = JsonSerializer.Serialize(newUser, new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
@@ -85,7 +85,6 @@ namespace LoginPage
             );
 
 
-            // System.Net.Http.HttpRequestException: 'No connection could be made because the target machine actively refused it. (localhost:8080)'
             HttpResponseMessage response;
             try
             {
@@ -118,5 +117,43 @@ namespace LoginPage
 
 
         }
+
+        // Takes a username, sends it to the backend to log out, and returns true if successful, false if failed.
+        public async Task<bool> Logout(string username)
+        {
+        
+
+
+            HttpResponseMessage response;
+            try
+            {
+                response = await client.GetAsync(
+                    $"http://localhost:8080/api/auth/logout/{username}"
+                );
+            }
+            catch (HttpRequestException ex)
+            {
+                Debug.WriteLine($"Request error: {ex.Message}");
+                return false;
+            }
+
+
+            if (response.IsSuccessStatusCode)
+            {
+                Debug.WriteLine($"Status Code: {response.StatusCode}");
+                string responseJson = await response.Content.ReadAsStringAsync();
+
+                Debug.WriteLine($"Response: {responseJson}");
+
+                
+                return true;
+            }
+            else
+            {
+                Debug.WriteLine($"Response: {response}");
+                return false;
+            }
+        }
+
     }
 }

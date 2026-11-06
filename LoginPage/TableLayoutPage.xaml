@@ -4,12 +4,446 @@
              x:Class="LoginPage.TableLayoutPage"
              Title="Table Layout"
              xmlns:views="clr-namespace:LoginPage">
-    <VerticalStackLayout>
+
+    <ScrollView>
         
-        <views:TopBarView x:Name="TopBar"/>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+        <VerticalStackLayout MinimumWidthRequest="1000">
+            <ContentView x:Name="TopBarContainer"/>
+        
+            <Grid Padding ="20" RowDefinitions = "140,140,140,140,140,140" ColumnDefinitions="*,*,*,*,*,*">
+
+                <!--- Tables A1 - A6 -->
+                <Border
+                    Grid.Row ="0" Grid.Column ="0"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="A1_Button"
+                    
+                        Text ="A1" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="0"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="A2_Button"
+                        Text ="A2" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="2" Grid.Column ="0"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="A3_Button"
+                        Text ="A3" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="3" Grid.Column ="0"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="A4_Button"
+                        Text ="A4" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="0"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="A5_Button"
+                        Text ="A5" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="5" Grid.Column ="0"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="A6_Button"
+                        Text ="A6" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <!--- Tables B1 - B6 -->
+                <Border
+                    Grid.Row ="0" Grid.Column ="1"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="B1_Button"
+                    
+                        Text ="B1" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="1"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="B2_Button"
+                        Text ="B2" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="2" Grid.Column ="1"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="B3_Button"
+                        Text ="B3" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="3" Grid.Column ="1"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="B4_Button"
+                        Text ="B4" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="1"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="B5_Button"
+                        Text ="B5" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="5" Grid.Column ="1"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="B6_Button"
+                        Text ="B6" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <!--- Tables C5 - C6 -->
+                <Border
+                    Grid.Row ="4" Grid.Column ="2"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="C5_Button"
+                        Text ="C5" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="5" Grid.Column ="2"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="C6_Button"
+                        Text ="C6" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <!--- Tables D5 - D6 -->
+                <Border
+                    Grid.Row ="4" Grid.Column ="3"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="D5_Button"
+                        Text ="D5" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="5" Grid.Column ="3"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="D6_Button"
+                        Text ="D6" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <!--- Tables E1 - E6 -->
+                <Border
+                    Grid.Row ="0" Grid.Column ="4"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="E1_Button"
+                    
+                        Text ="E1" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="4"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="E2_Button"
+                        Text ="E2" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="2" Grid.Column ="4"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="E3_Button"
+                        Text ="E3" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="3" Grid.Column ="4"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="E4_Button"
+                        Text ="E4" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="4"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="E5_Button"
+                        Text ="E5" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="5" Grid.Column ="4"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="E6_Button"
+                        Text ="E6" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <!--- Tables F1 - F6 -->
+                <Border
+                    Grid.Row ="0" Grid.Column ="5"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="F1_Button"
+                    
+                        Text ="F1" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="1" Grid.Column ="5"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="F2_Button"
+                        Text ="F2" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="2" Grid.Column ="5"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="F3_Button"
+                        Text ="F3" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="3" Grid.Column ="5"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="F4_Button"
+                        Text ="F4" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="4" Grid.Column ="5"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="F5_Button"
+                        Text ="F5" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked ="ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <Border
+                    Grid.Row ="5" Grid.Column ="5"
+                    WidthRequest ="120" HeightRequest ="120">
+
+                    <Button x:Name ="F6_Button"
+                        Text ="F6" FontSize ="Large" FontAttributes ="Bold"
+                        Clicked = "ShowTablePopUpMenu"
+                        BackgroundColor="#FF008000"
+                        Loaded="OnTableLoaded"/>
+                </Border>
+
+                <!-- Buttons to prepare to set tables as ready, dirty, or occupied. -->
+                <Border 
+                    BackgroundColor ="White" Padding ="3"
+                    Grid.Row ="0" Grid.Column ="2" Grid.ColumnSpan ="2"
+                    StrokeShape ="RoundRectangle, 30" MinimumWidthRequest="630" MaximumWidthRequest="630">
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout Spacing ="-1">
+                                <Border 
+                                    BackgroundColor ="{StaticResource Gray900}"
+                                    StrokeShape="RoundRectangle, 25, 0, 25, 0"
+                                    WidthRequest="205">
+
+                                    <Button 
+                                        BackgroundColor ="Transparent"
+                                        ImageSource ="greencircle.png" 
+                                        Text ="Clean" TextColor ="White" FontSize ="23"
+                                        Clicked="OnCleanClicked"/>
+                                </Border>
+
+                                <BoxView BackgroundColor ="White" WidthRequest ="4"/>
+
+                                <Border 
+                                    BackgroundColor ="{StaticResource Gray900}"
+                                    StrokeShape="RoundRectangle, 0, 0, 0, 0"
+                                    WidthRequest="205">
+
+                                    <Button 
+                                        BackgroundColor ="Transparent"
+                                        ImageSource ="yellowcircle.png" 
+                                        Text ="Occupied" TextColor ="White" FontSize ="23"
+                                        Clicked="OnOccupiedClicked"/>
+                                </Border>
+
+                                <BoxView BackgroundColor ="White" WidthRequest ="4"/>
+
+                                <Border 
+                                    BackgroundColor ="{StaticResource Gray900}"
+                                    StrokeShape="RoundRectangle, 0, 25, 0, 25"
+                                    WidthRequest="206">
+
+                                    <Button 
+                                        BackgroundColor ="Transparent"
+                                        HorizontalOptions = "Center" VerticalOptions ="Center"
+                                        ImageSource ="redcircle.png" 
+                                        Text ="Dirty" TextColor ="White" FontSize ="23"
+                                        Clicked="OnDirtyClicked"/>
+                                </Border>
+
+                            </HorizontalStackLayout>
+
+                        <Button x:Name="DoneButton" Text="Done" Clicked="OnDoneClicked" IsVisible="False"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Pop-up menu for table actions -->
+                <AbsoluteLayout 
+                    BackgroundColor ="Transparent"
+                    Grid.Row ="2" Grid.Column ="2" Grid.ColumnSpan ="2"
+                    HeightRequest ="300" WidthRequest ="500">
+
+                    <Border
+                            VerticalOptions ="Fill" HorizontalOptions ="Fill"
+                            x:Name ="BorderPopUp" x:FieldModifier ="public"
+                            BackgroundColor ="DimGray"
+    
+                            WidthRequest ="500" HeightRequest ="300"
+                            StrokeShape ="RoundRectangle, 20"
+                            IsVisible ="False">
+                        
+                        <Grid RowDefinitions ="10,0,60,60,60,60" ColumnDefinitions ="500">
+                            <Label
+                                x:Name="TableNameLabel" x:FieldModifier ="public"
+                                Grid.Row ="2" Grid.Column ="0" 
+                                FontSize = "Large"
+                                Text ="Table_Name" HorizontalOptions ="Center"/>
+
+                            <Button
+                                Grid.Row ="1" Grid.Column ="0"
+                                BackgroundColor ="Transparent"
+                                WidthRequest ="30" HeightRequest ="30"
+                                HorizontalOptions ="End" VerticalOptions ="Fill"
+                                ImageSource ="whitexbutton.jpg"
+                                Clicked ="Close_Button_Clicked">
+                            </Button>
+
+                            <Border HorizontalOptions ="Center"
+                                Grid.Row ="3" Grid.Column ="0"
+                                WidthRequest ="400" HeightRequest ="50">
+                                <Button 
+                                    Text ="Add Order" Clicked ="AddOrderButton_Clicked" x:Name="AddOrderButton"/>
+                            </Border>
+
+                            <Border 
+                                Grid.Row ="4" Grid.Column ="0"
+                                WidthRequest ="400" HeightRequest ="50">
+                                
+                                
+                            </Border>
+
+                            
+
+                            <Border x:Name ="b" 
+                                Grid.Row ="5" Grid.Column ="0"
+                                WidthRequest ="400" HeightRequest ="50">
+
+                                <Button x:Name ="CheckoutButton" Text ="Checkout" Clicked ="CheckoutButton_Clicked"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                   
+                </AbsoluteLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

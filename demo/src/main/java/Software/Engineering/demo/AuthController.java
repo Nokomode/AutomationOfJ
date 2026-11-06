@@ -14,6 +14,7 @@ public class AuthController {
         this.authService = authService;
     }
 
+    /// Gets login information from the frontend then sends a success response back if the user information was correct
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
         User success = authService.login(request.getEmployeeID(), request.getPassword());
@@ -31,6 +32,7 @@ public class AuthController {
         }
     }
 
+    /// Gets registration information from the frontend then sends a success response back if the registration was successful (user didn't already exist)
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
 
@@ -46,8 +48,17 @@ public class AuthController {
 
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "Hello, world!";
+    /// Gets the username of the current user on the frontend and calls AuthService.logout to log the user out. Sends a success response upon successful logout.
+    @GetMapping("/logout/{username}")
+    public ResponseEntity<String> logout(@PathVariable String username) {
+        boolean success = authService.logout(username);
+        System.out.println("Logging out: " + username);
+        if (success) {
+            return ResponseEntity.status(200).body("Logged out successfully");
+
+        } else {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("Could not logout");
+        }
     }
+
 }

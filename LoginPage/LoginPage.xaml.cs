@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -16,6 +17,7 @@ namespace LoginPage
             _authService = authService;
         }
 
+        // Calls AuthService login function to attempt a login. If successful, sets the UserSessions information and navigates to a role specific page. If unsuccessful, displays an error message.
         private async void OnLoginClicked(object? sender, EventArgs e)
         {
             LoginErrorLabel.IsVisible = false;
@@ -25,7 +27,9 @@ namespace LoginPage
             if (result != null)
             {
                 UserSession.Role = result.Role;
-                UserSession.EmployeeID = result.EmployeeID;
+                UserSession.EmployeeID = result.Username;
+                UserSession.FirstName = result.FirstName;
+                UserSession.LastName = result.LastName;
                 // navigate to the right page
 
                 switch (UserSession.Role)
@@ -34,7 +38,7 @@ namespace LoginPage
                         await Shell.Current.GoToAsync($"//{nameof(ManagerDashboardPage)}");
                         break;
                     case "Wait Staff":
-                        //await Shell.Current.GoToAsync($"//{nameof(WaiterDashboardPage)}");
+                        await Shell.Current.GoToAsync($"//{nameof(WaiterDashboardPage)}");
                         break;
                     case "Chef":
                         //await Shell.Current.GoToAsync($"//{nameof(ChefDashboardPage)}");
@@ -47,12 +51,13 @@ namespace LoginPage
             else
             {
                 LoginErrorLabel.IsVisible = true;
-                //await DisplayAlertAsync("Error", "Incorrect Login Information", "OK");
+                await DisplayAlertAsync("Error", "Incorrect Login Information", "OK");
                 return;
                 
             }
         }
 
+        // Sends the user to the registration page
         private async void OnRegisterClicked(object? sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegisterPage(_authService));

@@ -8,11 +8,15 @@
 
     
     <VerticalStackLayout>
-        <views:TopBarView x:Name="TopBar"/>
-        
+        <ContentView x:Name="TopBarContainer"/>
+
+        <!-- Welcome message to manager -->
         <Label 
-            Text="Welcome to .NET MAUI!"
+            x:Name="WelcomeLabel"
+            Text="Welcome"
+            FontSize="25"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            Margin="50"/>
     </VerticalStackLayout>
 </ContentPage>

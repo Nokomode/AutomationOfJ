@@ -4,12 +4,52 @@
              x:Class="LoginPage.InventoryPage"
              Title="Inventory"
              xmlns:views="clr-namespace:LoginPage">
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
 
-        <views:TopBarView x:Name="TopBar"/>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            <ContentView x:Name="TopBarContainer" Margin="0,0,0,20"/>
+            <CollectionView ItemsSource="{Binding InventoryItems}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <Border BackgroundColor="#2a2a2a" Padding="15" Margin="20"
+                    HorizontalOptions="Center" MinimumWidthRequest="400" MaximumWidthRequest="600"
+                    StrokeShape="RoundRectangle 15" StrokeThickness="0">
+                                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+
+                                    <!-- Item Name and Quantity -->
+                                    <VerticalStackLayout VerticalOptions="Center" WidthRequest="150">
+                                        <Label Text="{Binding ItemName}" TextColor="White" 
+                                           HorizontalOptions="Center" FontAttributes="Bold" TextDecorations="Underline"/>
+                                        <Label Text="{Binding Quantity}" TextColor="White" 
+                                           HorizontalOptions="Center"/>
+                                    </VerticalStackLayout>
+
+                                    <!-- Amount Entry -->
+                                    <Entry x:Name="QuantityEntry" Text="{Binding AdjustAmount}" Keyboard="Numeric"  Placeholder="Qty"
+                                           PlaceholderColor="#888" TextColor="White" BackgroundColor="#3a3a3a" WidthRequest="70"
+                                           VerticalOptions="Center"/>
+
+                                    <!-- Add / Take Buttons -->
+                                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                                        <Button Text="+ Add" BackgroundColor="#9880E5" TextColor="White" CornerRadius="8"
+                                                HeightRequest="36" WidthRequest="80" CommandParameter="{Binding .}"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},
+                                                Path=BindingContext.AddToInventoryCommand}"/>
+                                        <Button Text="- Take" BackgroundColor="#9880E5" TextColor="White" CornerRadius="8"
+                                                HeightRequest="36" WidthRequest="80"
+                                                CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}},
+                                                Path=BindingContext.TakeFromInventoryCommand}"/>
+                                    </VerticalStackLayout>
+
+                                    
+
+                                </HorizontalStackLayout>
+                            </Border>
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

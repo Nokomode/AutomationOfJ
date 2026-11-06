@@ -18,6 +18,7 @@ namespace LoginPage
             _authService = authService;
         }
 
+        // Attempts to register a user via the AuthService. Validates input and shows error messages as needed.
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
 
@@ -57,7 +58,7 @@ namespace LoginPage
                 return;
             }
 
-            // Password complexity: 8+ chars, 1 number, 1 special character
+            // Password requirements: 8+ chars, 1 number, 1 special character
             var password = PasswordEntry.Text;
             bool validPassword = password.Length >= 8
                 && password.Any(char.IsDigit)
@@ -81,7 +82,7 @@ namespace LoginPage
 
 
 
-            User newUser = new User
+            RegisterRequest newUser = new RegisterRequest
             {
                 EmployeeID = UsernameEntry.Text,
                 Password = PasswordEntry.Text,
@@ -90,7 +91,7 @@ namespace LoginPage
                 Phone = PhoneEntry.Text,
                 FirstName = FirstNameEntry.Text,
                 LastName = LastNameEntry.Text,
-                Salary = 11 // Default salary, can be updated later by admin
+                Salary = 11 // Default salary
             };
 
             bool success = await _authService.RegisterAsync(newUser);
@@ -102,7 +103,7 @@ namespace LoginPage
             else
 
             {
-                await DisplayAlertAsync("Error", "HTTP Connection Timed Out", "OK");
+                await DisplayAlertAsync("Error", "Username Already Exists", "OK");
             }
 
             

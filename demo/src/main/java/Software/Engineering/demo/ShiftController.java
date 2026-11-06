@@ -1,5 +1,6 @@
 package Software.Engineering.demo;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Arrays;
 import java.util.Optional;
@@ -19,7 +20,7 @@ public class ShiftController {
         this.shiftService = shiftService;
         this.userRepository = userRepository;
     }
-
+    /// sends a shift to the frontend by its shift id, sends a not found error to the frontend if the search fails
     @PostMapping("/getByShiftID")
     public ResponseEntity<Shift> getShiftByShiftID(@RequestBody ShiftRequest request) {
 
@@ -32,13 +33,20 @@ public class ShiftController {
 
     }
 
-    @PostMapping("/getShiftsByEmployeeID")
-    public ResponseEntity<List<Shift>> getShiftsByEmployeeId(@RequestBody ShiftRequest request) {
-        List<Shift> shifts = Arrays.asList(shiftService.getShiftByEmployeeId(request.getEmployeeID()));
+    /// sends a list of shifts to the frontend by their associated employee id, sends a 401 error wtha null body if the search fails
+    @GetMapping("/getShiftsByEmployeeID/{id}")
+    public ResponseEntity<List<Shift>> getShiftsByEmployeeId(@PathVariable String id) {
+        List<Shift> shifts = shiftService.getShiftByEmployeeId(id);
+        System.out.println(shifts);
+        if (shifts != null) {
+            return ResponseEntity.ok(shifts);
+        } else {
+            return ResponseEntity.status(401).body(null);
+        }
 
-        return ResponseEntity.ok(shifts);
     }
 
+    /// sends all shifts to the frontend
     @PostMapping("/getAllShifts")
     public ResponseEntity<List<Shift>> getAllShifts() {
 
@@ -47,14 +55,12 @@ public class ShiftController {
     }
 
 
-    //Dont really need an add shift method, but its here just in case
-    /*@PostMapping("/addShift")
-    public ResponseEntity<String> addShift(@RequestBody ShiftRequest request) {
 
-       Optional<User> user = userRepository.findById(request.getEmployeeID());
-       Shift shift = new Shift(request.getStartTime(), request.getEndTime(), request.getShiftID(), user, request.getDate());
-       shiftService.addShift(shift);
+    /* @PostMapping("/endShift/{id}")
+    public ResponseEntity<String> endShift(@PathVariable String id) {
+       LocalDateTime endTime = LocalDateTime.now();
+       shiftService.endShift(id, endTime);
        return ResponseEntity.ok("Shift added successfully");
-    }*/
+    } */
 
 }

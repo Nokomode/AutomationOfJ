@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\topbarview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:topbarview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\tablelayoutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:tablelayoutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -15,24 +11,44 @@
       "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:tablelayoutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\addordermenupage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:addordermenupage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\managerdashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:managerdashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\menuitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:menuitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\checkoutcardreviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:checkoutcardreviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\automationofj.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:automationofj.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\managerdashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:managerdashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\allemployeespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:allemployeespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|c:\\users\\adboo\\desktop\\software engineering project\\loginpage\\customerinfosession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E4F3B6-0487-3D2F-5748-E0D4CBAC7586}|AutomationOfJ.csproj|solutionrelative:customerinfosession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,21 +58,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AppShell.xaml",
-              "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AppShell.xaml",
-              "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvyUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T18:20:56.67Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwCsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T13:48:41.993Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -80,94 +95,143 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableService.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableService.cs",
+              "RelativeDocumentMoniker": "TableService.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableService.cs",
+              "RelativeToolTip": "TableService.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T02:05:21.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ManagerDashboardPage.xaml",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\ManagerDashboardPage.xaml",
-              "RelativeDocumentMoniker": "ManagerDashboardPage.xaml",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\ManagerDashboardPage.xaml",
-              "RelativeToolTip": "ManagerDashboardPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T22:32:01.594Z",
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\Table.cs",
+              "RelativeDocumentMoniker": "Table.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\Table.cs",
+              "RelativeToolTip": "Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T02:04:55.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TableLayoutPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml.cs",
-              "RelativeDocumentMoniker": "TableLayoutPage.xaml.cs",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml.cs",
-              "RelativeToolTip": "TableLayoutPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Title": "AddOrderMenuPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AddOrderMenuPage.xaml.cs",
+              "RelativeDocumentMoniker": "AddOrderMenuPage.xaml.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AddOrderMenuPage.xaml.cs",
+              "RelativeToolTip": "AddOrderMenuPage.xaml.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T22:34:11.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TableLayoutPage.xaml",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml",
-              "RelativeDocumentMoniker": "TableLayoutPage.xaml",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml",
-              "RelativeToolTip": "TableLayoutPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T22:33:26.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TopBarView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TopBarView.xaml.cs",
-              "RelativeDocumentMoniker": "TopBarView.xaml.cs",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TopBarView.xaml.cs*",
-              "RelativeToolTip": "TopBarView.xaml.cs*",
-              "ViewState": "AgIAACIAAAAAAAAAAAA0wDgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T21:42:16.31Z",
+              "WhenOpened": "2026-04-25T22:03:08.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml.cs",
-              "RelativeToolTip": "RegisterPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
+              "Title": "MenuItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\MenuItemViewModel.cs",
+              "RelativeDocumentMoniker": "MenuItemViewModel.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\MenuItemViewModel.cs",
+              "RelativeToolTip": "MenuItemViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:32:27.68Z",
+              "WhenOpened": "2026-04-26T00:43:13.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ManagerDashboardPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\ManagerDashboardPage.xaml.cs",
-              "RelativeDocumentMoniker": "ManagerDashboardPage.xaml.cs",
-              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\ManagerDashboardPage.xaml.cs",
-              "RelativeToolTip": "ManagerDashboardPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TableLayoutPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml.cs",
+              "RelativeDocumentMoniker": "TableLayoutPage.xaml.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml.cs",
+              "RelativeToolTip": "TableLayoutPage.xaml.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswGMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T22:56:22.373Z",
+              "WhenOpened": "2026-04-25T09:07:00.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TableLayoutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml",
+              "RelativeDocumentMoniker": "TableLayoutPage.xaml",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\TableLayoutPage.xaml",
+              "RelativeToolTip": "TableLayoutPage.xaml",
+              "ViewState": "AgIAAIUAAAAAAAAAAAApwI4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-26T00:28:48.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "CheckoutCardReviewPage.xaml",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\CheckoutCardReviewPage.xaml",
+              "RelativeDocumentMoniker": "CheckoutCardReviewPage.xaml",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\CheckoutCardReviewPage.xaml",
+              "RelativeToolTip": "CheckoutCardReviewPage.xaml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-25T10:02:55.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AutomationOfJ.csproj",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AutomationOfJ.csproj",
+              "RelativeDocumentMoniker": "AutomationOfJ.csproj",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AutomationOfJ.csproj",
+              "RelativeToolTip": "AutomationOfJ.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-25T10:15:59.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegisterPage.xaml",
               "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "RegisterPage.xaml",
               "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\RegisterPage.xaml",
               "RelativeToolTip": "RegisterPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T18:22:21.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T10:02:45.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AllEmployeesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AllEmployeesPage.xaml.cs",
+              "RelativeDocumentMoniker": "AllEmployeesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\AllEmployeesPage.xaml.cs",
+              "RelativeToolTip": "AllEmployeesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T10:04:01.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerInfoSession.cs",
+              "DocumentMoniker": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\CustomerInfoSession.cs",
+              "RelativeDocumentMoniker": "CustomerInfoSession.cs",
+              "ToolTip": "C:\\Users\\adboo\\Desktop\\Software Engineering Project\\LoginPage\\CustomerInfoSession.cs",
+              "RelativeToolTip": "CustomerInfoSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:33:24.678Z"
             }
           ]
         }

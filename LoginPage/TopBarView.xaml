@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginPage.TopBarView">
+             x:Class="LoginPage.TopBarView"
+             x:Name="TopBar">
 
 
     <Grid BackgroundColor="Black" Padding="12,0" HeightRequest="70"
@@ -25,6 +26,14 @@
                 <BoxView x:Name="TableLayoutUnderline" Color="#9880E5"
                 HeightRequest="2" IsVisible="False"/>
             </VerticalStackLayout>
+            
+            
+            <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
+                <Button Text="Order Queue" Clicked="OnOrderQueueClicked" Background="Transparent" TextColor="White"/>
+                <BoxView x:Name="OrderQueueUnderline" Color="#9880E5"
+                HeightRequest="2" IsVisible="False"/>
+            </VerticalStackLayout>
+            
 
             <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" Spacing="0">
                 <Button Text="Inventory" Clicked="OnInventoryClicked" Background="Transparent" TextColor="White"/>
@@ -54,8 +63,8 @@
             </VerticalStackLayout>
             
 
-            
-            <Label Text="Manager, John" TextColor="White" VerticalOptions="Center"/>
+            <!-- Name Label and logout button -->
+            <Label x:Name="ManagerLabel" Text="" TextColor="White" VerticalOptions="Center"/>
             <Button Text="Logout" Clicked="OnLogoutClicked" TextColor="White" Background="#9880E5"/>
         </HorizontalStackLayout>
     </Grid>

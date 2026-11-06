@@ -1,5 +1,8 @@
 package Software.Engineering.demo;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
@@ -18,7 +21,7 @@ public class User {
     }
 
     public User(String username, String password, String role, String firstName, String lastName, double salary, String phone, String email ) {
-        this.employeeID = username;
+        this.employeeId = username;
         this.passwordHash = password;
         this.role = role;
         this.firstName = firstName;
@@ -28,9 +31,18 @@ public class User {
         this.email = email;
     }
 
+    public User(String username, String role, String firstName, String lastName, String phone, String email ) {
+        this.employeeId = username;
+        this.role = role;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.email = email;
+    }
+
     @Id
     @Column(name = "Employee_ID")
-    private String employeeID;
+    private String employeeId;
 
     @Column(name = "Password")
     private String passwordHash;
@@ -54,8 +66,8 @@ public class User {
     private String phone;
 
 
-
-    public String getEmployeeID() {return employeeID;}
+    /// getters and setters
+    public String getEmployeeID() {return employeeId;}
     public String getRole() {return role;}
     public String getPasswordHash() {return passwordHash;}
     public String getFirstName() {return firstName;}

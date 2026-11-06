@@ -1,7 +1,10 @@
 package Software.Engineering.demo;
 import jakarta.persistence.*;
+import org.springframework.cglib.core.Local;
+
 import java.time.LocalDateTime;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 @Entity
@@ -21,17 +24,17 @@ public class Shift {
     private LocalDate date;
 
     @Column (name = "Start_Time")
-    private LocalDateTime startTime;
+    private LocalTime startTime;
 
     @Column (name = "End_Time")
-    private LocalDateTime endTime;
+    private LocalTime endTime;
 
 
     public Shift() {
 
     }
 
-    public Shift(LocalDateTime startTime, LocalDateTime endTime, int shiftId, User employee, LocalDate date) {
+    public Shift(LocalTime startTime, LocalTime endTime, int shiftId, User employee, LocalDate date) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.shiftID = shiftId;
@@ -39,20 +42,20 @@ public class Shift {
         this.date = date;
     }
 
-    public Shift(LocalDateTime startTime, LocalDateTime endTime, User employee, LocalDate date) {
+    public Shift(LocalTime startTime, LocalTime endTime, User employee, LocalDate date) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.employee = employee;
         this.date = date;
     }
 
-    public Shift(LocalDateTime endTime, int shiftId) {
+    public Shift(LocalTime endTime, int shiftId) {
         this.endTime = endTime;
         this.shiftID = shiftId;
     }
 
 
-    // Getters and Setters
+    /// Getters and Setters
     public int getShiftId() {
         return shiftID;
     }
@@ -68,17 +71,17 @@ public class Shift {
     public LocalDate getDate() { return this.date; }
     public void setDate(LocalDate date) { this.date = date; }
 
-    public LocalDateTime getStartTime() {
+    public LocalTime getStartTime() {
         return startTime;
     }
-    public void setStartTime(LocalDateTime startTime) {
+    public void setStartTime(LocalTime startTime) {
         this.startTime = startTime;
     }
 
-    public LocalDateTime getEndTime() {
+    public LocalTime getEndTime() {
         return endTime;
     }
-    public void setEndTime(LocalDateTime endTime) {
+    public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
 

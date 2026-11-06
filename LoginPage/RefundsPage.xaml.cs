@@ -1,10 +1,25 @@
+
+
 namespace LoginPage;
 
 public partial class RefundsPage : ContentPage
 {
-	public RefundsPage()
+	private readonly OrderQueueViewModel _viewModel;
+	private readonly OrderService _orderService;
+
+	public RefundsPage(TopBarView topBar, OrderService orderService)
 	{
 		InitializeComponent();
-		TopBar.SetRefundsUnderline();
+        TopBarContainer.Content = topBar;
+        topBar.SetRefundsUnderline();
+        _orderService = orderService;
+        _viewModel = new OrderQueueViewModel(orderService);
+        BindingContext = _viewModel;
+    }
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await _viewModel.LoadRefundOrdersAsync();
     }
 }

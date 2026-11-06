@@ -5,16 +5,13 @@ using System.Threading.Tasks;
 
 namespace LoginPage
 {
-    /* ---------- LOGIN REQUEST MODEL ---------- */
 
     public class LoginRequest
     {
+        // Models the login request sent to the backend, containing the employee ID and text-password
         public string EmployeeID { get; set; }
         public string Password { get; set; }
     }
-
-    // Testing git commit and push
-
 
 
 }

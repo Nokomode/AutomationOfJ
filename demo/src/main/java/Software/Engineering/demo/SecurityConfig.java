@@ -10,12 +10,19 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
+    /// This defines what URLs are authorized for HTTP communication.
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf.disable()) // optional
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll() // make login public
+                        .requestMatchers("/api/shifts/**").permitAll()
+                        .requestMatchers("/api/users/**").permitAll()
+                        .requestMatchers("/api/menu/**").permitAll()
+                        .requestMatchers("/api/orders/**").permitAll()
+                        .requestMatchers("/api/table/**").permitAll()
+                        .requestMatchers("/api/inventory/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form.disable())
@@ -23,16 +30,5 @@ public class SecurityConfig {
         return http.build();
     }
 
-    @Bean
-    public UserDetailsService users(UserRepository userRepo) {
-        return username -> {
-            Software.Engineering.demo.User user = userRepo.findById(username)
-                    .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-            return org.springframework.security.core.userdetails.User
-                    .withUsername(user.getEmployeeID())
-                    .password(user.getPasswordHash()) // your hashed password column
-                    .authorities(user.getRole())           // or authorities if you have more complex roles
-                    .build();
-        };
-    }
+
 }

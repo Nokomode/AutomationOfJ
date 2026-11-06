@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace LoginPage
 {
     public class User
     {
+        [JsonPropertyName("employeeId")]
         public string EmployeeID { get; set; }
         public string Password { get; set; }
         public string Role { get; set; }

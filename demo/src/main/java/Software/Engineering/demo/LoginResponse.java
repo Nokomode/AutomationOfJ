@@ -1,5 +1,6 @@
 package Software.Engineering.demo;
 
+/// When login is successful, this information about the user is sent back to the frontend to be used for other functions
 public class LoginResponse {
     public String username;
     public String role;
@@ -10,6 +11,7 @@ public class LoginResponse {
 
     }
 
+    /// Getters and setters
     public String getUsername() {
         return this.username;
     }

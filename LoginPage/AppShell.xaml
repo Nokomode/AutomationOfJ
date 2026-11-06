@@ -6,7 +6,8 @@
     xmlns:local="clr-namespace:LoginPage"
     Title="LoginPage"
     FlyoutBehavior="Disabled">
-
+    <!-- Each ShellContent represents a page in the application along with names to route to them -->
+    
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:LoginPage}"
@@ -22,21 +23,22 @@
         ContentTemplate="{DataTemplate local:ManagerDashboardPage}"
         Route="ManagerDashboardPage" />
 
-    <!-- <ShellContent
+    <ShellContent
         Title="Waiter Dashboard"
         ContentTemplate="{DataTemplate local:WaiterDashboardPage}"
-        Route="WaiterDashboardPage" /> -->
+        Route="WaiterDashboardPage" />
 
-    <ShellContent
-        Title="Top Bar"
-        ContentTemplate="{DataTemplate local:TopBarView}"
-        Route="TopBarView" />
 
     <ShellContent
         Title="Table Layout"
         ContentTemplate="{DataTemplate local:TableLayoutPage}"
         Route="TableLayoutPage" />
-    
+
+    <ShellContent
+    Title="Order Queue"
+    ContentTemplate="{DataTemplate local:OrderQueuePage}"
+    Route="OrderQueuePage" />
+
     <ShellContent
         Title="Inventory"
         ContentTemplate="{DataTemplate local:InventoryPage}"
@@ -56,5 +58,35 @@
         Title="Refunds"
         ContentTemplate="{DataTemplate local:RefundsPage}"
         Route="RefundsPage" />
+
+    <ShellContent
+        Title="All Employees"
+        ContentTemplate="{DataTemplate local:AllEmployeesPage}"
+        Route="AllEmployeesPage" />
+
+    <ShellContent
+        Title="Add Order"
+        ContentTemplate="{DataTemplate local:AddOrderMenuPage}"
+        Route="AddOrderMenuPage" />
+
+    <ShellContent
+        Title="Checkout Card Payment"
+        ContentTemplate="{DataTemplate local:CheckoutCardPaymentContactInfoPage}"
+        Route="CheckoutCardPaymentContactInfoPage" />
+
+    <ShellContent
+        Title="Checkout Payment Method"
+        ContentTemplate="{DataTemplate local:CheckoutPaymentMethodPage}"
+        Route="CheckoutPaymentMethodPage" />
+
+    <ShellContent
+        Title="Checkout Card Review"
+        ContentTemplate="{DataTemplate local:CheckoutCardReviewPage}"
+        Route="CheckoutCardReviewPage" />
+
+    <ShellContent
+        Title="Checkout Cash Payment"
+        ContentTemplate="{DataTemplate local:CheckoutCashPaymentContactInfoPage}"
+        Route="CheckoutCashPaymentContactInfoPage" />
 
 </Shell>
